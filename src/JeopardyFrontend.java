@@ -5,11 +5,17 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.*;
-public class FirstGUI extends Application{
+public class JeopardyFrontend extends Application{
 	public static void main(String[] args) {
 		launch();
 	}
 	public void start(Stage primaryStage) {
+		
+		Backend backend = new Backend();
+		
+		backend.getNewQuestion("Passwords",100);
+		
+		
 		StackPane root = new StackPane();
 		GridPane grid = new GridPane();
 		Button[] buttons = new Button[25];
