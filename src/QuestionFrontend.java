@@ -1,5 +1,6 @@
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
@@ -28,22 +29,24 @@ public class QuestionFrontend extends Application{
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		// TODO Auto-generated method stub
-		
+		GridPane layout = new GridPane();
 		
 		
 		Backend current = new Backend();
 		this.currentQuestion = current.getNewQuestion(category, value);
+		
+		layout.add(new Label(this.currentQuestion.question),0,0);
+		
 		addAllButtons();
 		System.out.print(this.currentQuestion);
 		
 		
 		
 		
-		GridPane layout = new GridPane();
 		
 		
 		for(int i =0;i<answerButtons.length;i++) {
-			layout.add(answerButtons[i].getButton(), 1, i);
+			layout.add(answerButtons[i].getButton(), 0, i+1);
 		}
 		Scene currentScene = new Scene(layout);	
 		primaryStage.setScene(currentScene);
@@ -60,6 +63,13 @@ public class QuestionFrontend extends Application{
 			boolean currentIsCorrect = allAnswers[i].equals(currentQuestion.answer);
 			answerButtons[i] = new MultipleChoiceButton(allAnswers[i],currentIsCorrect);
 		}
+		
+		
+		
+		
+		
+		
+		
 		System.out.println(this.answerButtons[0]);
 		
 	}
