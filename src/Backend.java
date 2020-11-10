@@ -1,18 +1,53 @@
+import java.io.File;
 
 public class Backend {
-	// 100,200,300,400,500
 	
-	public Question[] allQuestions;
-	
-	public void Backend() {
+	//Global Variables
+	public static Map<String, Question> map = new HashMap<>();
+
+	/*
+	 * Function: createQuestionsMap
+	 * Description: Creates the hashmap for all questions, using the Question categories as keys
+	 */
+	public static void createQuestionsMap() throws FileNotFoundException {
+		File file = new File("Questions.");
+		Scanner scan = new Scanner(file);
 		
+		while(scan.hasNextLine()) {
+			ArrayList<String> answerList = new ArrayList<String>();
+			
+			String category = scan.nextLine();
+			String type = scan.nextLine();
+			String question = scan.nextLine();
+			String answer = scan.nextLine();
+			answerList.add(answer);
+	
+			String currentWrongAnswer = scan.nextLine();
+			while(!currentWrongAnswer.equals("..............................................................................................................................")) {
+				answerList.add(currentWrongAnswer);
+				currentWrongAnswer = scan.nextLine();
+			}
+			Collections.shuffle(answerList);
+			
+			String explanation = scan.nextLine();
+			scan.nextLine();
+			Question currentQuestion = new Question(category, type, question, answer, answerList,explanation);
+			map.put(category, currentQuestion);
+		}
+		scan.close();
 	}
 	
-	
-	public Question getNewQuestion(String questionCategory,int score) {
-		
-		//Get question from text file
-		
-		return null;
+	/*
+	 * Function: getQuestion
+	 * @param String category
+	 * Description: Returns the Question instance with the corresponding category
+	 */
+	public static Question getQuestion(String category) {
+		if(map.containsKey(category)) {
+			return map.get(category);
+		}else {
+			return null;
+		}
 	}
+	
 }
