@@ -1,4 +1,12 @@
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+
 
 public class Backend {
 	
@@ -10,7 +18,7 @@ public class Backend {
 	 * Description: Creates the hashmap for all questions, using the Question categories as keys
 	 */
 	public static void createQuestionsMap() throws FileNotFoundException {
-		File file = new File("Questions.");
+		File file = new File("src/Questions");
 		Scanner scan = new Scanner(file);
 		
 		while(scan.hasNextLine()) {
@@ -22,8 +30,9 @@ public class Backend {
 			String answer = scan.nextLine();
 			answerList.add(answer);
 	
+			
 			String currentWrongAnswer = scan.nextLine();
-			while(!currentWrongAnswer.equals("..............................................................................................................................")) {
+			while(!currentWrongAnswer.contains("......")) {
 				answerList.add(currentWrongAnswer);
 				currentWrongAnswer = scan.nextLine();
 			}
@@ -43,9 +52,12 @@ public class Backend {
 	 * Description: Returns the Question instance with the corresponding category
 	 */
 	public static Question getQuestion(String category) {
+		System.out.println(map);
+		System.out.println(category);
 		if(map.containsKey(category)) {
 			return map.get(category);
 		}else {
+			System.out.println("BROKEN");
 			return null;
 		}
 	}

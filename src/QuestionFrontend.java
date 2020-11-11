@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
@@ -12,12 +14,12 @@ public class QuestionFrontend extends Application{
 	private MultipleChoiceButton answerButtons[];
 	private Question currentQuestion;
 	
-	private int value;
-	private String category;
+	private static int value;
+	private static String category;
 	
 	public static void main(String[] args) {
 		QuestionFrontend test = new QuestionFrontend();
-		test.launchNewQuestion(10,null);
+		test.launchNewQuestion(10,"Module00-500");
 	}
 	
 	public void launchNewQuestion(int value, String category) {
@@ -33,9 +35,10 @@ public class QuestionFrontend extends Application{
 		
 		
 		Backend current = new Backend();
-		this.currentQuestion = current.getNewQuestion(category, value);
+		Backend.createQuestionsMap();
+		this.currentQuestion = Backend.getQuestion(category);
 		
-		layout.add(new Label(this.currentQuestion.question),0,0);
+		layout.add(new Label(this.currentQuestion.getQuestion()),0,0);
 		
 		addAllButtons();
 		System.out.print(this.currentQuestion);
@@ -54,14 +57,13 @@ public class QuestionFrontend extends Application{
 	}
 	
 	public void addAllButtons() {
-		System.out.println("HELLOTHERE");
-		String[] allAnswers = currentQuestion.possibleAnswers;
+		ArrayList<String> allAnswers = currentQuestion.getAnswerList();
 		
-		this.answerButtons = new MultipleChoiceButton[allAnswers.length];
+		this.answerButtons = new MultipleChoiceButton[allAnswers.size()];
 	
-		for(int i =0;i<allAnswers.length;i++) {
-			boolean currentIsCorrect = allAnswers[i].equals(currentQuestion.answer);
-			answerButtons[i] = new MultipleChoiceButton(allAnswers[i],currentIsCorrect);
+		for(int i =0;i<allAnswers.size();i++) {
+			boolean currentIsCorrect = allAnswers.get(i).equals(currentQuestion.getAnswer());
+			answerButtons[i] = new MultipleChoiceButton(allAnswers.get(i),currentIsCorrect);
 		}
 		
 		
@@ -70,7 +72,6 @@ public class QuestionFrontend extends Application{
 		
 		
 		
-		System.out.println(this.answerButtons[0]);
 		
 	}
 	

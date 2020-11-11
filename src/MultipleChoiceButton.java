@@ -11,7 +11,7 @@ public class MultipleChoiceButton {
 	private Button button;
 	
 	public MultipleChoiceButton(String answerText,boolean isCorrect){
-		this.answerText = answerText+isCorrect;
+		this.answerText = answerText;
 		this.isCorrect = isCorrect;
 		
 		this.button = new Button(this.answerText);

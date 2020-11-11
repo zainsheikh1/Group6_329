@@ -11,9 +11,7 @@ public class JeopardyFrontend extends Application{
 	}
 	public void start(Stage primaryStage) {
 		
-		Backend backend = new Backend();
-		
-		backend.getNewQuestion("Passwords",100);
+
 		
 		
 		StackPane root = new StackPane();
