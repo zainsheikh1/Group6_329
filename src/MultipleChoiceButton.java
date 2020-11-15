@@ -15,15 +15,6 @@ public class MultipleChoiceButton {
 		this.isCorrect = isCorrect;
 		
 		this.button = new Button(this.answerText);
-		this.button.setOnAction(new EventHandler<ActionEvent>() {
-
-			@Override
-			public void handle(ActionEvent event) {
-				buttonWasPressed();
-				
-			}
-			
-		});
 		
 		
 	}
@@ -32,14 +23,15 @@ public class MultipleChoiceButton {
 		return button;
 	}
 	
-	public void buttonWasPressed() {
-	
-		
-		if(isCorrect) {
+	public void setWrongStyle() {
+		button.setTextFill(javafx.scene.paint.Color.RED);
+	}
+	public void setRightStyle() {
 		button.setTextFill(javafx.scene.paint.Color.GREEN);
-		}else {
-			button.setTextFill(javafx.scene.paint.Color.RED);
-		}
+	}
+	
+	public boolean getIsCorrect() {
+		return this.isCorrect;
 	}
 	
 	
