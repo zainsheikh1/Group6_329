@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import javafx.application.Application;
 import javafx.event.Event;
 import javafx.event.EventHandler;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
@@ -49,7 +50,6 @@ public class QuestionFrontend extends Application{
 		// TODO Auto-generated method stub
 		this.layoutManager = new GridPane();
 		
-		
 		Backend current = new Backend();
 		Backend.createQuestionsMap();
 		this.currentQuestion = Backend.getQuestion(category);
@@ -66,6 +66,7 @@ public class QuestionFrontend extends Application{
 		
 		for(int i =0;i<answerButtons.length;i++) {
 			this.layoutManager.add(answerButtons[i].getButton(), 0, i+1);
+			answerButtons[i].getButton().setMaxWidth(Double.MAX_VALUE);
 		}
 		layoutManager.add(new Label(""), 0, 100);
 		Scene currentScene = new Scene(this.layoutManager);	
@@ -123,8 +124,10 @@ public class QuestionFrontend extends Application{
 	
 	
 	private void displayExplanation() {
-		layoutManager.add(new Label("EXPLANATION"), 0, 100);
-		
+		Label currentExplanation = new Label(this.currentQuestion.getExplanation());
+		layoutManager.add(currentExplanation, 0, 100);
+		currentExplanation.setMaxWidth(Double.MAX_VALUE);
+		currentExplanation.setAlignment(Pos.CENTER);
 	}
 	
 	
