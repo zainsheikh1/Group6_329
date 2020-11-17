@@ -29,12 +29,19 @@ public class QuestionFrontend extends Application{
 		test.launchNewQuestion(10,"Module00-400");
 	}
 	
-	public void launchNewQuestion(int value, String category) {
+	public int launchNewQuestion(int value, String category) {
 		this.value = value;
 		this.category = category;
 		this.userAnswered = false;
 		this.userCorrect = false;
 		launch();
+		
+		if(userCorrect) {
+			return value;
+		}
+		else {
+			return 0;
+		}
 	}
 
 	@Override
