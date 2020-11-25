@@ -50,7 +50,7 @@ public class JeopardyFrontend extends Application{
 	 */
 	@Override
 	public void start(Stage primaryStage) {
-		primaryStage.setTitle("Jeoprady Game");
+		primaryStage.setTitle("Jeopardy Game");
 		primaryStage.setScene(new Scene(setContent()));
 		primaryStage.show();
 		
@@ -75,7 +75,13 @@ public class JeopardyFrontend extends Application{
 			
 			button.setOnAction((event) -> {
 				System.out.println("Button clicked");
-//				question.displayNewQuestion();
+				try {
+					question.launchNewQuestion(10,"Module00-400");//Will need to change arguments for specific categories and point scores
+					question.startQuestion(new Stage());
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			});
 
 			
