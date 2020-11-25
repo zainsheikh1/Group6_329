@@ -7,11 +7,12 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 
 
-public class QuestionFrontend extends Application{
+public class QuestionFrontend {
 	
 	
 	private MultipleChoiceButton answerButtons[];
@@ -35,7 +36,7 @@ public class QuestionFrontend extends Application{
 		this.category = category;
 		this.userAnswered = false;
 		this.userCorrect = false;
-		launch();
+//		launch();
 		
 		if(userCorrect) {
 			return value;
@@ -44,35 +45,63 @@ public class QuestionFrontend extends Application{
 			return 0;
 		}
 	}
-
-	@Override
-	public void start(Stage primaryStage) throws Exception {
-		// TODO Auto-generated method stub
+	
+	/**
+	 * Will launch GUI question 
+	 */
+	public void displayNewQuestion() throws Exception{
 		this.layoutManager = new GridPane();
+		Stage window = new Stage();
+
 		
 		Backend current = new Backend();
 		Backend.createQuestionsMap();
 		this.currentQuestion = Backend.getQuestion(category);
 		
-		this.layoutManager.add(new Label(this.currentQuestion.getQuestion()),0,0);
+		this.layoutManager.add(new Label(this.currentQuestion.getQuestion()), 0, 0);
 		
 		addAllButtons();
 		System.out.print(this.currentQuestion);
 		
-		
-		
-		
-		
-		
+		window.initModality(Modality.APPLICATION_MODAL); //block action from main window until this one is done
+	
 		for(int i =0;i<answerButtons.length;i++) {
 			this.layoutManager.add(answerButtons[i].getButton(), 0, i+1);
 			answerButtons[i].getButton().setMaxWidth(Double.MAX_VALUE);
 		}
+		
 		layoutManager.add(new Label(""), 0, 100);
 		Scene currentScene = new Scene(this.layoutManager);	
-		primaryStage.setScene(currentScene);
-		primaryStage.show();
+		window.setScene(currentScene);
+		window.showAndWait();
 	}
+
+//	@Override
+//	public void start(Stage primaryStage) throws Exception {
+//		// TODO Auto-generated method stub
+//		this.layoutManager = new GridPane();
+//		
+//		Backend current = new Backend();
+//		Backend.createQuestionsMap();
+//		this.currentQuestion = Backend.getQuestion(category);
+//		
+//		this.layoutManager.add(new Label(this.currentQuestion.getQuestion()),0,0);
+//		
+//		addAllButtons();
+//		System.out.print(this.currentQuestion);
+//		
+//		primaryStage.initModality(Modality.APPLICATION_MODAL);
+//		primaryStage.setTitle("question");
+//		
+//		for(int i =0;i<answerButtons.length;i++) {
+//			this.layoutManager.add(answerButtons[i].getButton(), 0, i+1);
+//			answerButtons[i].getButton().setMaxWidth(Double.MAX_VALUE);
+//		}
+//		layoutManager.add(new Label(""), 0, 100);
+//		Scene currentScene = new Scene(this.layoutManager);	
+//		primaryStage.setScene(currentScene);
+//		primaryStage.show();
+//	}
 	
 	public void addAllButtons() {
 		ArrayList<String> allAnswers = currentQuestion.getAnswerList();
