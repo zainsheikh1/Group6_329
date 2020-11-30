@@ -42,7 +42,7 @@ public class QuestionFrontend{
 		
 		Backend current = new Backend();
 		Backend.createQuestionsMap();
-		this.currentQuestion = Backend.getQuestion(category);
+		this.currentQuestion = Backend.getQuestion(category+"-"+value);
 		
 		this.layoutManager.add(new Label(this.currentQuestion.getQuestion()),0,0);
 		

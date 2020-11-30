@@ -44,17 +44,19 @@ public class JeopardyFrontend extends Application{
 	MediaPlayer mPlayer = new MediaPlayer(music);
 	
 	/*
-	 * Setting content of the Jeoprady game
+	 * Setting content of the Jeopardy game
 	 */
 	private Parent setContent() {
 		GridPane root = new GridPane();
 		root.setPrefSize(500,500);
 		
-		for (int i=0; i<5; i++) {
+		int[] cellValues = {100,200,300,400,500};
+		String[] cellLabels = {"I Hear You're Good at Math","Cybercriminal Methods","Linux & Mocha","Blockchain","History and Rules"};
+ 		for (int i=0; i<5; i++) {
 			for (int j = 0; j<5;j++) {
-				questionBox questionBox = new questionBox();
-				questionBox.setTranslateX(j*100);
-				questionBox.setTranslateY(i*100);
+				questionBox questionBox = new questionBox(cellValues[j],cellLabels[i]);
+				questionBox.setTranslateX(i*100);
+				questionBox.setTranslateY(j*100);
 				
 				root.getChildren().add(questionBox);
 			}
@@ -122,12 +124,11 @@ public class JeopardyFrontend extends Application{
 	private class questionBox extends GridPane {
 		private Text text = new Text(); //by default, application has empty text
 		
-		public questionBox() {
-			int itemValue = 100;
+		public questionBox(int itemValue,String category) {
 			Button button = new Button();
 			
 			button.setMaxSize(50, 50);	
-			button.setText("$" + itemValue);
+			button.setText(category+"\n$" + itemValue);
 			button.setTextFill(Color.YELLOW);
 			button.setStyle(buttonBackground);
 			button.setTranslateX(25);
@@ -150,7 +151,7 @@ public class JeopardyFrontend extends Application{
 			button.setOnAction((event) -> {
 				System.out.println("Button clicked");
 				try {
-					question.launchNewQuestion(10,"Module00-400");//Will need to change arguments for specific categories and point scores
+					question.launchNewQuestion(itemValue,"Module00");//Will need to change arguments for specific categories and point scores
 					question.startQuestion(new Stage());
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
