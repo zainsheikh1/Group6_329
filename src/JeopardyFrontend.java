@@ -1,5 +1,7 @@
-import java.net.URL;
-import java.util.*; 
+import java.net.URL; 
+import java.util.*;
+
+import javafx.animation.RotateTransition;
 import javafx.application.*;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -7,6 +9,7 @@ import javafx.geometry.*;
 import javafx.scene.*;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.effect.Reflection;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
@@ -23,6 +26,8 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.*;
+import javafx.util.Duration;
+
 import com.Music.*;
 import com.Images.*;
 
@@ -42,6 +47,10 @@ public class JeopardyFrontend extends Application{
 	URL url = this.getClass().getClassLoader().getResource("com/Music/bensound-energy.mp3");
 	Media music = new Media(url.toExternalForm());
 	MediaPlayer mPlayer = new MediaPlayer(music);
+	
+	//image + effects
+	Image title = new Image("com/Images/jeopardy.png");
+	Reflection ref = new Reflection();
 	
 	/*
 	 * Setting content of the Jeopardy game
@@ -77,18 +86,36 @@ public class JeopardyFrontend extends Application{
 		Background background = new Background(backgroundFill);
 		startPane.setBackground(background);
 		
+		ImageView titleView = new ImageView(title);
+		titleView.setFitHeight(400);
+		titleView.setFitWidth(400);
+		startPane.add(titleView, 1, 0);
+		
+		RotateTransition rotate = new RotateTransition();
+		rotate.setNode(titleView);
+		rotate.setDuration(Duration.millis(500));
+		rotate.setByAngle(15);
+		rotate.setCycleCount(cycleCount);
+		rotate.setAutoReverse(true);
+		rotate.play();
 		
 		Button playButton = new Button("Play");
-		playButton.setMaxSize(500, 500);
-		playButton.setTranslateX(250);
-		playButton.setTranslateY(250);
+		playButton.setPrefSize(50, 50);
+		playButton.setTranslateX(150);
+		playButton.setTranslateY(200);
+		playButton.setStyle("-fx-font: 10 tahoma; -fx-base: #b6e7c9;");
+		playButton.setEffect(ref);
 		
 		playButton.setOnAction ((event) -> { //changes scene
 
 		});
-		
-		Button miniGameBtn = new Button("Minigame");
-		miniGameBtn.setMaxSize(500, 500);
+				
+		Button miniGameBtn = new Button("Mini-" + "\ngame");
+		miniGameBtn.setPrefSize(50, 50);
+		miniGameBtn.setTranslateX(300);
+		miniGameBtn.setTranslateY(200);
+		miniGameBtn.setStyle("-fx-font: 10 tahoma; -fx-base: #b6e7c9;");
+		miniGameBtn.setEffect(ref);
 		
 		startPane.getChildren().addAll(playButton, miniGameBtn);
 		
@@ -106,15 +133,15 @@ public class JeopardyFrontend extends Application{
 		
 		//runs scenes
 		//this portion will the game
-		window = primaryStage;
-		window.setTitle("Jeopardy Game");
-		window.setScene(new Scene(setContent()));
-		window.show();
+//		window = primaryStage;
+//		window.setTitle("Jeopardy Game");
+//		window.setScene(new Scene(setContent()));
+//		window.show();
 
 		//this portion will run the start screen
-//		window = primaryStage;
-//		window.setScene(new Scene(setStart()));
-//		window.show();
+		window = primaryStage;
+		window.setScene(new Scene(setStart()));
+		window.show();
 	}
 	
 	
@@ -139,14 +166,6 @@ public class JeopardyFrontend extends Application{
 			
 			setAlignment(Pos.CENTER);
 			getChildren().addAll(border, button);
-			
-			//add buttons to array List
-//			buttonList.add(button);
-			
-			//create if conditions that calls on a method to obtain the module00-400 value 
-//			if (buttonList[0] == 0) {
-//				
-//			}
 			
 			button.setOnAction((event) -> {
 				System.out.println("Button clicked");
