@@ -36,13 +36,15 @@ public class QuestionFrontend{
 	}
 
 
-	public void startQuestion(Stage primaryStage) throws Exception {
+	public int startQuestion(Stage primaryStage) throws Exception {
 		// TODO Auto-generated method stub
 		this.layoutManager = new GridPane();
+		this.layoutManager.setStyle(JeopardyFrontend.gameBackground);
 		
 		Backend current = new Backend();
 		Backend.createQuestionsMap();
 		this.currentQuestion = Backend.getQuestion(category+"-"+value);
+		
 		
 		this.layoutManager.add(new Label(this.currentQuestion.getQuestion()),0,0);
 		
@@ -61,8 +63,18 @@ public class QuestionFrontend{
 		layoutManager.add(new Label(""), 0, 100);
 		Scene currentScene = new Scene(this.layoutManager);	
 		primaryStage.setScene(currentScene);
-		primaryStage.show();
+		primaryStage.showAndWait();
+
+		
+		if(userCorrect) {
+			return value;
+		}else {
+			return 0;
+		}
+		
 	}
+	
+
 	
 	public void addAllButtons() {
 		ArrayList<String> allAnswers = currentQuestion.getAnswerList();
@@ -104,6 +116,7 @@ public class QuestionFrontend{
 			if (buttonToChange.getIsCorrect()) {
 				buttonToChange.setRightStyle();
 				userCorrect = true;
+				System.out.println("HELLO");
 			}else {
 				buttonToChange.setWrongStyle();
 				userCorrect = false;

@@ -37,8 +37,8 @@ public class JeopardyFrontend extends Application{
 	Stage window;
 	
 	//game 
-	String gameBackground = "-fx-background-color: rgba(100, 125, 255, 0.5);";
-	String buttonBackground = "-fx-background-color: #050be7";
+	static String gameBackground = "-fx-background-color: rgba(100, 125, 255, 0.5);";
+	static String buttonBackground = "-fx-background-color: #050be7";
 	QuestionFrontend question = new QuestionFrontend();
 	Button[] buttonList = new Button[25];
 	
@@ -49,29 +49,65 @@ public class JeopardyFrontend extends Application{
 	MediaPlayer mPlayer = new MediaPlayer(music);
 	
 	//image + effects
-	Image title = new Image("com/Images/jeopardy.png");
+	Image title = new Image("com/Images/jeopardyTitleScreen.png");
 	Reflection ref = new Reflection();
+	Image headerTitle = new Image("com/Images/jeopardyHeader.png");
+	
+	static Label scoreLabel = new Label("");
+	
+	private int score = 0;
 	
 	/*
 	 * Setting content of the Jeopardy game
 	 */
 	private Parent setContent() {
 		GridPane root = new GridPane();
-		root.setPrefSize(500,500);
+		root.setPrefSize(500,600);
 		
+		//Create Header
+		GridPane headerPane = new GridPane();
+		
+		Rectangle headerColour = new Rectangle(425,100);
+		headerColour.setFill(Color.CORNFLOWERBLUE);
+		headerPane.add(headerColour,0,0); 
+		
+		headerColour = new Rectangle(75,100);
+		headerColour.setFill(Color.CORNFLOWERBLUE);
+		headerPane.add(headerColour,1,0); 
+		
+		//headerPane.setTranslateX(200);
+		
+		root.add(headerPane,0,0);
+		
+		ImageView titleView = new ImageView(headerTitle);
+		titleView.setFitHeight(100/2);
+		titleView.setFitWidth(385/2);
+		headerPane.add(titleView,0,0);
+		
+		headerPane.add(scoreLabel,1,0);
+		
+		
+		
+		//Create Buttons
 		int[] cellValues = {100,200,300,400,500};
 		String[] cellLabels = {"I Hear You're Good at Math","Cybercriminal Methods","Linux & Mocha","Blockchain","History and Rules"};
  		for (int i=0; i<5; i++) {
 			for (int j = 0; j<5;j++) {
 				questionBox questionBox = new questionBox(cellValues[j],cellLabels[i]);
-				questionBox.setTranslateX(i*100);
-				questionBox.setTranslateY(j*100);
+				questionBox.setTranslateX((i*100)-500);
+				questionBox.setTranslateY((j*100));
 				
-				root.getChildren().add(questionBox);
+				root.add(questionBox,1,1);
 			}
 		}
 
 		return root;
+	}
+	
+	public void addScore(int newScore) {
+		score+=newScore;
+		scoreLabel.setText("Score:\n"+(score));
+		System.out.println("HELLO");
 	}
 	
 	/*
@@ -79,7 +115,7 @@ public class JeopardyFrontend extends Application{
 	 */
 	private Parent setStart() {
 		GridPane startPane = new GridPane();
-		startPane.setPrefSize(500, 500);
+		startPane.setPrefSize(500, 600);
 		
 		BackgroundFill backgroundFill = new BackgroundFill(Color.CORNFLOWERBLUE,
 				CornerRadii.EMPTY, Insets.EMPTY);
@@ -107,7 +143,7 @@ public class JeopardyFrontend extends Application{
 		playButton.setEffect(ref);
 		
 		playButton.setOnAction ((event) -> { //changes scene
-
+			window.setScene(new Scene(setContent()));
 		});
 				
 		Button miniGameBtn = new Button("Mini-" + "\ngame");
@@ -119,6 +155,8 @@ public class JeopardyFrontend extends Application{
 		
 		startPane.getChildren().addAll(playButton, miniGameBtn);
 		
+
+		
 		return startPane;
 	}
 	
@@ -128,9 +166,12 @@ public class JeopardyFrontend extends Application{
 	@Override
 	public void start(Stage primaryStage) throws Exception{
 		//plays music
-		mPlayer.setAutoPlay(true);
+		//mPlayer.setAutoPlay(true);
 		mPlayer.setCycleCount(cycleCount);
 		
+		addScore(0);
+		
+		primaryStage.setMaxWidth(500);
 		//runs scenes
 		//this portion will the game
 //		window = primaryStage;
@@ -140,8 +181,9 @@ public class JeopardyFrontend extends Application{
 
 		//this portion will run the start screen
 		window = primaryStage;
-		window.setScene(new Scene(setStart()));
-		window.show();
+		Scene GUIScene = new Scene(setStart());
+		window.setScene(GUIScene);
+		primaryStage.show();
 	}
 	
 	
@@ -154,11 +196,12 @@ public class JeopardyFrontend extends Application{
 		public questionBox(int itemValue,String category) {
 			Button button = new Button();
 			
-			button.setMaxSize(50, 50);	
+			button.setMaxSize(90, 90);	
 			button.setText(category+"\n$" + itemValue);
+			button.wrapTextProperty().setValue(true);
 			button.setTextFill(Color.YELLOW);
 			button.setStyle(buttonBackground);
-			button.setTranslateX(25);
+			button.setTranslateX(5);
 			
 			Rectangle border = new Rectangle(100,100);
 			border.setFill(Color.CORNFLOWERBLUE); 
@@ -171,7 +214,9 @@ public class JeopardyFrontend extends Application{
 				System.out.println("Button clicked");
 				try {
 					question.launchNewQuestion(itemValue,"Module00");//Will need to change arguments for specific categories and point scores
-					question.startQuestion(new Stage());
+					addScore(question.startQuestion(new Stage()));
+					
+					button.setDisable(true);
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();

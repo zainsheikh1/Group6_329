@@ -3,6 +3,7 @@
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
+import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 
 public class MultipleChoiceButton {
@@ -15,7 +16,8 @@ public class MultipleChoiceButton {
 		this.isCorrect = isCorrect;
 		
 		this.button = new Button(this.answerText);
-		
+		button.setStyle(JeopardyFrontend.buttonBackground);
+		button.setTextFill(Color.YELLOW);
 		
 	}
 	
