@@ -40,7 +40,7 @@ public class JeopardyFrontend extends Application{
 	static String gameBackground = "-fx-background-color: rgba(100, 125, 255, 0.5);";
 	static String buttonBackground = "-fx-background-color: #050be7";
 	QuestionFrontend question = new QuestionFrontend();
-	Button[] buttonList = new Button[25];
+	ArrayList<Button> buttonList = new ArrayList<Button>();
 	
 	//music
 	int cycleCount = 1000;
@@ -56,6 +56,8 @@ public class JeopardyFrontend extends Application{
 	static Label scoreLabel = new Label("");
 	
 	private int score = 0;
+	
+	private boolean allAnswered = false;
 	
 	/*
 	 * Setting content of the Jeopardy game
@@ -186,6 +188,19 @@ public class JeopardyFrontend extends Application{
 		primaryStage.show();
 	}
 	
+	private void checkScore() throws Exception {
+		allAnswered = true;
+		for(Button currentButton: buttonList) {
+			if(!currentButton.isDisabled()) {
+				allAnswered=false;
+			}
+		}
+		if(allAnswered) {
+		GameOverScreen endScreen = new GameOverScreen();
+		endScreen.startGameOver(new Stage(),score,this);
+		}
+		}
+	
 	
 	/*
 	 * Sets up a question box 
@@ -209,7 +224,7 @@ public class JeopardyFrontend extends Application{
 			
 			setAlignment(Pos.CENTER);
 			getChildren().addAll(border, button);
-			
+			buttonList.add(button);
 			button.setOnAction((event) -> {
 				System.out.println("Button clicked");
 				try {
@@ -217,6 +232,7 @@ public class JeopardyFrontend extends Application{
 					addScore(question.startQuestion(new Stage()));
 					
 					button.setDisable(true);
+					checkScore();
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -229,6 +245,13 @@ public class JeopardyFrontend extends Application{
 	
 	public static void main(String[] args) {
 		launch(args);
+	}
+	
+	public void restartGame() {
+		for(Button currentButton :buttonList) {
+			currentButton.setDisable(false);
+		}
+		addScore(-1*score);
 	}
 	
 	
