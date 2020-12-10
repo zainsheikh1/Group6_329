@@ -9,6 +9,7 @@ import javafx.geometry.*;
 import javafx.scene.*;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.effect.Reflection;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -155,11 +156,33 @@ public class JeopardyFrontend extends Application{
 		miniGameBtn.setStyle("-fx-font: 10 tahoma; -fx-base: #b6e7c9;");
 		miniGameBtn.setEffect(ref);
 		
+		miniGameBtn.setOnAction((event) -> {
+			window.setScene(new Scene(setMini()));
+		});
+		
 		startPane.getChildren().addAll(playButton, miniGameBtn);
 		
 
 		
 		return startPane;
+	}
+	
+	private Parent setMini() {
+		GridPane miniPane = new GridPane();
+		miniPane.setPrefSize(500, 600);
+		
+		Image title = new Image("com/Images/ad.png");  //put working
+		ImageView titleView = new ImageView(title);
+		titleView.setFitHeight(400);
+		titleView.setFitWidth(400);
+		miniPane.add(titleView, 0,0);
+		
+		
+		
+		TextField userTextField = new TextField();
+		miniPane.add(userTextField, 1, 1);
+		
+		return miniPane;
 	}
 	
 	/*
