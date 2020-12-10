@@ -171,12 +171,11 @@ public class JeopardyFrontend extends Application{
 		GridPane miniPane = new GridPane();
 		miniPane.setPrefSize(500, 600);
 		
-		Image title = new Image("com/Images/ad.png");  //put working
-		ImageView titleView = new ImageView(title);
-		titleView.setFitHeight(400);
-		titleView.setFitWidth(400);
-		miniPane.add(titleView, 0,0);
-		
+//		Image title = new Image("com/Images/ad.png");  //put working image link from com.Images
+//		ImageView titleView = new ImageView(title);
+//		titleView.setFitHeight(400);
+//		titleView.setFitWidth(400);
+//		miniPane.add(titleView, 0,0);
 		
 		
 		TextField userTextField = new TextField();
