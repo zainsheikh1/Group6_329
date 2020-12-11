@@ -111,16 +111,16 @@ Word
 ..............................................................................................................................
 Explanaton: 
 Char - large enough to contain any ASCII or UTF-8 unit
-Byte - a unit of data that consists of 8 bits, aka “octet”
+Byte - a unit of data that consists of 8 bits, aka  octet 
 String - sequence of characters, either as a literal constant or as some kind of variable
 Binary - positional number system that uses a base of 2
 Bit - a binary digit
-Nybble - half an octet, aka “quartet”
+Nybble - half an octet, aka  quartet 
 Word - aggregation of bits handled as a unit by a CPU
 ..............................................................................................................................
 I heard you're good in math-500
 MultipleChoice
-“CPSC” converted to Hex is:
+ CPSC  converted to Hex is:
 435053430a
 5269636b526f6c6c
 3a2d29
@@ -291,11 +291,11 @@ What is phishing?
 Pretending to be a trusted source through electronic communication so a victim is tricked into giving you sensitive information (passwords, credit/debit card details)
 A misspelling of fishing
 Malware hidden within a seemingly innocuous or desirable program such as a calculator application for a smartphone
-Surreptitiously gathers information about users activities and transmits them to a third party (often bundled with some  "legitimate" software)
+Surreptitiously gathers information about users activities and transmits them to a third party (often bundled with some   legitimate  software)
 ..............................................................................................................................
 Trojan - malware hidden within a seemingly innocuous or desirable program such as a calculator application for a smartphone
 Phishing - pretending to be a trusted source through electronic communication so a victim is tricked into giving you sensitive information (passwords, credit/debit card details)
-Spyware - Surreptitiously gathers information about users activities and transmits them to a third party (often bundled with some  "legitimate" software)
+Spyware - Surreptitiously gathers information about users activities and transmits them to a third party (often bundled with some   legitimate  software)
 ..............................................................................................................................
 Cybercriminal Methods-300
 MultipleChoice
@@ -361,7 +361,7 @@ No explanation
 ..............................................................................................................................
 Cybercriminal Methods-400
 MultipleChoice
-In the indistinguishability game, which is won by telling apart message1 and message2 after encryption, if the keys (single digits) and the messages (single digits) were the same size, and the "encryption" consists of only adding the key digit by digit to the plaintext then:
+In the indistinguishability game, which is won by telling apart message1 and message2 after encryption, if the keys (single digits) and the messages (single digits) were the same size, and the  encryption  consists of only adding the key digit by digit to the plaintext then:
 The attacker had no advantage or strategy to win
 The attacker had an advantage and the strategy to win
 The attacker had an advantage but no strategy to win
@@ -385,7 +385,7 @@ The attacker had an advantage and the strategy to win
 The attacker had an advantage but no strategy to win
 The attacker had no advantage but did have a strategy to win
 ..............................................................................................................................
-Explanation: If the keys are longer, when "encrypt" and add the keys (ex. 40) to the messages (ex. 9) than the number was always a double digit number so no way to tell what the key could have been.
+Explanation: If the keys are longer, when  encrypt  and add the keys (ex. 40) to the messages (ex. 9) than the number was always a double digit number so no way to tell what the key could have been.
 ..............................................................................................................................
 Cybercriminal Methods-500
 MultipleChoice
@@ -583,11 +583,11 @@ No explanation
 ..............................................................................................................................
 Linux & Mocha-400
 MultipleChoice
-“su” can be invoked with non-root passwords; “sudo” requires root password
+ su  can be invoked with non-root passwords;  sudo  requires root password
 False
 True
 ..............................................................................................................................
-Explanation: “sudo” can be invoked with non-root passwords; “su” requires root password
+Explanation:  sudo  can be invoked with non-root passwords;  su  requires root password
 ..............................................................................................................................
 Linux & Mocha-400
 MultipleChoice
@@ -699,7 +699,7 @@ MultipleChoice
 A digital identity is created using a [verification key (vk), signature key (sk)] key pair. This makes it possible to:
 All of the above 
 Be anonymous if vk (or H(vk)) looks random
-Sk lets you “speak for” on vk
+Sk lets you  speak for  on vk
 Generate as many identities as you want 
 If sk is leaked to may, or everyone shares the same vk, than everyone acts as the same person and is therefore anonymous
 ..............................................................................................................................
@@ -797,7 +797,7 @@ Adleman
 Shamir
 Rivest
 ..............................................................................................................................
-Answer: How dare you not know the three recipients of  Association for Computing Machinery's 2002 Turing Award “for their seminal contributions to the theory and practical application of public-key cryptography.
+Answer: How dare you not know the three recipients of  Association for Computing Machinery's 2002 Turing Award  for their seminal contributions to the theory and practical application of public-key cryptography.
 ..............................................................................................................................
 History and Rules-100 
 MultipleChoice
@@ -848,7 +848,7 @@ Explanation: A secure system is one you can rely on to keep your personal data c
 ..............................................................................................................................
 History and Rules-200 
 MultipleChoice
-Find the author of the following principle: “It must not require secrecy, and it can easily fall into the hands of the enemy”. 
+Find the author of the following principle:  It must not require secrecy, and it can easily fall into the hands of the enemy . 
 Kerkchoff
 Blastland
 Harrison
@@ -869,10 +869,10 @@ MultipleChoice
 Which of the following is true about 2019 NIST password guidelines
 At least 10 attempts before lockout
 Supports at least 32 characters
-b). Allow “password hints” and “secret questions”
+b). Allow  password hints  and  secret questions 
 c). Do not allow passwords to be copy-pasted into password fields
 ..............................................................................................................................
-Explanation: NIST SSupports at least 64 characters; no “password hints” and “secret questions”; allow passwords to be copy-pasted into password fields
+Explanation: NIST SSupports at least 64 characters; no  password hints  and  secret questions ; allow passwords to be copy-pasted into password fields
 ..............................................................................................................................
 History and Rules-200 
 MultipleChoice
@@ -886,7 +886,7 @@ No explanation
 ..............................................................................................................................
 History and Rules-300 
 MultipleChoice
-What is the idea behind the “Separation of privilege” for the protection/security mechanism. 
+What is the idea behind the  Separation of privilege  for the protection/security mechanism. 
 When a protection mechanism require two keys, it allows for two-person control to prevent unilateral action by attackers. 
 Base access decision on permission rather than exclusion
 Security design should not depend on the ignorance of potential attacker
@@ -977,14 +977,3 @@ All of the options (1, 2, 3)
 ..............................................................................................................................
 No explanation
 ..............................................................................................................................
-
-
-
-
-
-
-
-
-
-
-
