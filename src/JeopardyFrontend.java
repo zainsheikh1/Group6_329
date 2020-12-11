@@ -243,7 +243,7 @@ public class JeopardyFrontend extends Application{
 			button.setOnAction((event) -> {
 				System.out.println("Button clicked");
 				try {
-					question.launchNewQuestion(itemValue,"Module00");//Will need to change arguments for specific categories and point scores
+					question.launchNewQuestion(itemValue,category);//Will need to change arguments for specific categories and point scores
 					addScore(question.startQuestion(new Stage()));
 					
 					button.setDisable(true);
