@@ -249,10 +249,10 @@ No explanation
 Cybercriminal Methods-300
 MultipleChoice
 An encryption scheme has three algorithms which include: 1) Gen creates (generates) one or more keys (pads), 2) Enc locks the message under a given key (encrypts that message), 3) Bre unlocks messages using any possible key (breaks the encryption - similar to lock picking), 4) Dec unlocks messages using an associated key (decrypts that message).
-a). 1), 2), 4)
-b). 1), 3), 4)
-c). 2), 3)
-d). All of the options (1, 2, 3, 4)
+1), 2), 4)
+1), 3), 4)
+2), 3)
+All of the options (1, 2, 3, 4)
 ..............................................................................................................................
 No explanation
 ..............................................................................................................................
@@ -321,11 +321,11 @@ Explanation: creeper, reaper, wabbit, animal & prevade, elk cloner, code red, SQ
 Cybercriminal Methods-400
 MultipleChoice
 Ways to recognize if an email is a phishing email include: 1) Hovering over a link to see which website it takes you to, 2) Always checking the display or 'from' name, 3) The email doesn't ask for personal information, 4) Checking the logo of the company or the spelling of the company name.
-a). 1), 2), 4)
-b). 1), 3), 4)
-c). 2), 3)
-d). None of the options 
-e). All of the options
+1), 2), 4)
+1), 3), 4)
+2), 3)
+None of the options 
+All of the options
 ..............................................................................................................................
 No explanation
 ..............................................................................................................................
@@ -409,8 +409,7 @@ No explanation
 ..............................................................................................................................
 Cybercriminal Methods-500
 MultipleChoice
-Select the correct matching of the malware taxonomy: 
-Name = 1) Spyware, 2) Root Kit, 3) Logic Bomb, 4) Worm, 5) Dropper; Definition = 1] Payload consists of installing some other malware on the infected host, 2] Covertly gathers information about users’ activities and transmits them to a third party, 3] Dormant payload with a program that triggers if some condition is met, 4] Malware that spreads with little-to-no user involvement, 5] Runs with highest possible privileges, uses privilege to hide its presence from system
+Select the correct matching of the malware taxonomy: Malware = 1) Spyware, 2) Root Kit, 3) Logic Bomb, 4) Worm, 5) Dropper; Definition = 1] Payload consists of installing some other malware on the infected host, 2] Covertly gathers information about users’ activities and transmits them to a third party, 3] Dormant payload with a program that triggers if some condition is met, 4] Malware that spreads with little-to-no user involvement, 5] Runs with highest possible privileges, uses privilege to hide its presence from system
 1)→2], 2)→5], 3)→3], 4)→4] 5)→1]
 5)→3], 4)→5], 3)→2], 2)→4] 1)→1]
 ..............................................................................................................................
@@ -418,7 +417,7 @@ No explanation
 ..............................................................................................................................
 Linux & Mocha-100
 MultipleChoice
-Ssh keygen is a tool for creating a new authentication key pair for SSH, which is used for logins and authenticating hosts. 
+ssh keygen is a tool for creating a new authentication key pair for SSH, which is used for logins and authenticating hosts. 
 True 
 False
 ..............................................................................................................................
@@ -445,7 +444,7 @@ Exploration: Notepad++ text editor, Vim hex editor, GNU emacs hex editor, Atom i
 ..............................................................................................................................
 Linux & Mocha-100
 MultipleChoice
-The three basic permission types (read, write, execute) are set on
+The three basic permission types (read, write, execute) are set on _____
 File
 Directory
 Folder
@@ -468,16 +467,6 @@ Strategies to decipher ciphertexts with cribdragging include making the cribword
 1), 3), 4)
 1), 3)
 All of the options (1, 2, 3, 4)
-..............................................................................................................................
-No explanation
-..............................................................................................................................
-Linux & Mocha-100
-MultipleChoice
-Strategies to decipher ciphertexts with cribdragging include making the cribword: 1) The rarest words you can think of, 2) The most common words you can think of, 3) The longest word in the English language (pneumonoultramicroscopicsilicovolcanoconiosis), 4) A reasonable word or fragment of a word that would come after the plaintext (aka the already deciphered ciphertext).
-a). 2), 4)
-b). 1), 3), 4)
-c). 1), 3)
-d). All of the options (1, 2, 3, 4)
 ..............................................................................................................................
 No explanation
 ..............................................................................................................................
