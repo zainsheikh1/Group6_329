@@ -25,6 +25,8 @@ public class QuestionFrontend{
 	
 	private GridPane layoutManager;
 	
+	private Stage primaryStage;
+	
 
 	public void launchNewQuestion(int value, String category) {
 		this.value = value;
@@ -37,6 +39,7 @@ public class QuestionFrontend{
 
 
 	public int startQuestion(Stage primaryStage) throws Exception {
+		this.primaryStage = primaryStage;
 		// TODO Auto-generated method stub
 		this.layoutManager = new GridPane();
 		this.layoutManager.setStyle(JeopardyFrontend.gameBackground);
@@ -121,16 +124,22 @@ public class QuestionFrontend{
 				buttonToChange.setWrongStyle();
 				userCorrect = false;
 			}
-			displayExplanation();
+			
 		}
+		displayExplanation();
 	}
 	
 	
 	private void displayExplanation() {
 		Label currentExplanation = new Label(this.currentQuestion.getExplanation());
+		currentExplanation.setWrapText(true);
 		layoutManager.add(currentExplanation, 0, 100);
 		currentExplanation.setMaxWidth(Double.MAX_VALUE);
 		currentExplanation.setAlignment(Pos.CENTER);
+		
+		primaryStage.hide();
+
+		primaryStage.show();
 	}
 	
 	
