@@ -167,11 +167,11 @@ Explanation: attacker always loses
 Cybercriminal Methods-200
 MultipleChoice
 The preimage resistance(s) is/are: 1) The hash of a message reveals nothing about a message (can only confirm or reject guesses), 2) Given the message and its hash, it’s hard to find another message that would give the same hash, 3) There are better ways to guess a message beyond simply guess and check, 4) The number of tries to get a collision is very small 
-a). 1), 2)
-b). 1), 3), 4)
-c). 2), 4)
-d). 3)
-e). All of the options (1, 2, 3, 4)
+1), 2)
+1), 3), 4)
+2), 4)
+3)
+All of the options (1, 2, 3, 4)
 ..............................................................................................................................
 No explanation
 ..............................................................................................................................
@@ -216,11 +216,7 @@ Explanation: Cryptographic hash functions H turns any message into a short, uniq
 ..............................................................................................................................
 Cybercriminal Methods-200
 MultipleChoice
-Determine what type of encryption is described below:
-The size of cipher text is same in size or smaller than the original plain text
-Transfers large amount of data
-Provides confidentiality 
-Low resource utilization
+Determine what type of encryption is described below:the size of cipher text is same in size or smaller than the original plain text; transfers large amount of data; provides confidentiality; low resource utilization.
 Symmetric
 Asymmetric
 ..............................................................................................................................
@@ -229,7 +225,6 @@ No explanation
 Cybercriminal Methods-200
 MultipleChoice
 md5 is a hash function that any reasonable person would use for applications today since it has collision resistance, therefore collisions do not lead to security failures with this function.
-MultipleChoice
 False
 True
 ..............................................................................................................................
