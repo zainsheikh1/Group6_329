@@ -13,6 +13,11 @@ public class Backend {
 	//Global Variables
 	public static Map<String, Question> map = new HashMap<>();
 
+	private static int random(int min, int max) {
+		return (int) (Math.random() * (max-min + 1) + min);
+	}
+	
+	
 	/*
 	 * Function: createQuestionsMap
 	 * Description: Creates the hashmap for all questions, using the Question categories as keys
@@ -39,9 +44,15 @@ public class Backend {
 			Collections.shuffle(answerList);
 			
 			String explanation = scan.nextLine();
-			scan.nextLine();
 			Question currentQuestion = new Question(category, type, question, answer, answerList,explanation);
-			map.put(category, currentQuestion);
+			ArrayList<Question> temp =new ArrayList<Question>();
+			if(map.get(category)!=null) {
+				temp = map.get(category);
+				
+			}
+			temp.add(currentQuestion);
+			
+			map.put(category, temp);
 		}
 		scan.close();
 	}
@@ -52,12 +63,11 @@ public class Backend {
 	 * Description: Returns the Question instance with the corresponding category
 	 */
 	public static Question getQuestion(String category) {
-		System.out.println(map);
-		System.out.println(category);
+		int rand = random(0,map.get(category).size()-1);
+		
 		if(map.containsKey(category)) {
-			return map.get(category);
+			return map.get(category).get(rand);
 		}else {
-			System.out.println("BROKEN");
 			return null;
 		}
 	}
