@@ -49,7 +49,10 @@ public class QuestionFrontend{
 		this.currentQuestion = Backend.getQuestion(category+"-"+value);
 		
 		
-		this.layoutManager.add(new Label(this.currentQuestion.getQuestion()),0,0);
+		Label questionText = new Label(this.currentQuestion.getQuestion());
+		questionText.setMaxWidth(800);
+		questionText.setWrapText(true);
+		this.layoutManager.add(questionText,0,0);
 		
 		addAllButtons();
 		System.out.print(this.currentQuestion);
