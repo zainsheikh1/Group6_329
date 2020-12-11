@@ -602,11 +602,11 @@ No explanation
 Linux & Mocha-400
 MultipleChoice
 Words that are likely to be the plaintext in cribdragging, in relation to computer security topics are: 1) Meat, 2) Apple, 3) MFA, 4) CIRW.
-a). 2), 3)
-b). 1), 2), 4)
-c). 1), 3)
-d). 3), 4)
-e). All of the options (1, 2, 3, 4)
+2), 3)
+1), 2), 4)
+1), 3)
+3), 4)
+All of the options (1, 2, 3, 4)
 ..............................................................................................................................
 Apple is the company, Meat is the food product, MFA – multi factor authentication, CIRW – random letters
 ..............................................................................................................................
@@ -667,10 +667,10 @@ No explanation
 Blockchain-100 
 MultipleChoice
 Merkle trees work by making a commitment of __ values  at once (for any n) which has final size __ bits.
-a). 2^n, 256
-b). log(n), 128 
-c). n^2, 256
-d). n^3, 512 
+2^n, 256
+log(n), 128 
+n^2, 256
+n^3, 512 
 ..............................................................................................................................
 No explanation
 ..............................................................................................................................
@@ -781,9 +781,9 @@ No explanation
 ..............................................................................................................................
 History and Rules-100 
 MultipleChoice
+Which of the below is not one of three elements of the security triad:
 Reliability
 Integrity
-Which of the below is not one of three elements of the security triad:
 Availability
 Confidentiality
 ..............................................................................................................................
