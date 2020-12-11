@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Backend {
 	
 	//Global Variables
-	public static Map<String, Question> map = new HashMap<>();
+	public static Map<String, ArrayList<Question>> map = new HashMap<>();
 
 	private static int random(int min, int max) {
 		return (int) (Math.random() * (max-min + 1) + min);
