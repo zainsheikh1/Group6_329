@@ -86,6 +86,8 @@ public class MiniGameScreen{
 		GridPane centerPane = new GridPane();
 		
 		Button convertButton = new Button("CONVERT");
+		convertButton.setStyle(JeopardyFrontend.buttonBackground);
+		convertButton.setTextFill(Color.YELLOW);
 		convertButton.setPrefWidth(1000000);
 		convertButton.setOnAction(new EventHandler() {
 
@@ -116,6 +118,8 @@ public class MiniGameScreen{
 		GridPane bottomPane = new GridPane();
 		
 		Button oneButton = new Button("Plaintext 1");
+		oneButton.setStyle(JeopardyFrontend.buttonBackground);
+		oneButton.setTextFill(Color.YELLOW);
 		oneButton.setOnAction(new EventHandler() {
 
 			@Override
@@ -128,7 +132,8 @@ public class MiniGameScreen{
 		
 		
 		Button twoButton = new Button("Plaintext 2");
-		
+		twoButton.setStyle(JeopardyFrontend.buttonBackground);
+		twoButton.setTextFill(Color.YELLOW);
 		twoButton.setOnAction(new EventHandler() {
 
 			@Override
