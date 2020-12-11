@@ -142,7 +142,7 @@ public class JeopardyFrontend extends Application{
 		playButton.setPrefSize(50, 50);
 		playButton.setTranslateX(150);
 		playButton.setTranslateY(200);
-		playButton.setStyle("-fx-font: 10 tahoma; -fx-base: #b6e7c9;");
+		playButton.setStyle("-fx-font: 10 tahoma; -fx-base: #00ff00;");
 		playButton.setEffect(ref);
 		
 		playButton.setOnAction ((event) -> { //changes scene
@@ -153,7 +153,7 @@ public class JeopardyFrontend extends Application{
 		miniGameBtn.setPrefSize(50, 50);
 		miniGameBtn.setTranslateX(300);
 		miniGameBtn.setTranslateY(200);
-		miniGameBtn.setStyle("-fx-font: 10 tahoma; -fx-base: #b6e7c9;");
+		miniGameBtn.setStyle("-fx-font: 10 tahoma; -fx-base: #00ff00;");
 		miniGameBtn.setEffect(ref);
 		
 		miniGameBtn.setOnAction((event) -> {
