@@ -117,7 +117,7 @@ public class MiniGameScreen{
 		
 		GridPane bottomPane = new GridPane();
 		
-		Button oneButton = new Button("Plaintext 1");
+		Button oneButton = new Button("Plaintext 2");
 		oneButton.setStyle(JeopardyFrontend.buttonBackground);
 		oneButton.setTextFill(Color.YELLOW);
 		oneButton.setOnAction(new EventHandler() {
