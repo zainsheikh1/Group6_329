@@ -157,7 +157,7 @@ public class JeopardyFrontend extends Application{
 		miniGameBtn.setEffect(ref);
 		
 		miniGameBtn.setOnAction((event) -> {
-			window.setScene(new Scene(setMini()));
+			setMini();
 		});
 		
 		startPane.getChildren().addAll(playButton, miniGameBtn);
@@ -167,21 +167,14 @@ public class JeopardyFrontend extends Application{
 		return startPane;
 	}
 	
-	private Parent setMini() {
-		GridPane miniPane = new GridPane();
-		miniPane.setPrefSize(500, 600);
-		
-//		Image title = new Image("com/Images/ad.png");  //put working image link from com.Images
-//		ImageView titleView = new ImageView(title);
-//		titleView.setFitHeight(400);
-//		titleView.setFitWidth(400);
-//		miniPane.add(titleView, 0,0);
-		
-		
-		TextField userTextField = new TextField();
-		miniPane.add(userTextField, 1, 1);
-		
-		return miniPane;
+	private void setMini() {
+		MiniGameScreen miniGame = new MiniGameScreen();
+		try {
+			miniGame.startMiniGame(new Stage());
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	/*
