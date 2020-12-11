@@ -396,6 +396,26 @@ False
 ..............................................................................................................................
 No explanation
 ..............................................................................................................................
+Linux & Mocha-100
+MultipleChoice
+Strategies to decipher ciphertexts with cribdragging include making the cribword: 1) The rarest words you can think of, 2) The most common words you can think of, 3) The longest word in the English language (pneumonoultramicroscopicsilicovolcanoconiosis), 4) A reasonable word or fragment of a word that would come after the plaintext (aka the already deciphered ciphertext). 
+2), 4)
+1), 3), 4)
+1), 3)
+All of the options (1, 2, 3, 4)
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+Linux & Mocha-100
+MultipleChoice
+Strategies to decipher ciphertexts with cribdragging include making the cribword: 1) The rarest words you can think of, 2) The most common words you can think of, 3) The longest word in the English language (pneumonoultramicroscopicsilicovolcanoconiosis), 4) A reasonable word or fragment of a word that would come after the plaintext (aka the already deciphered ciphertext).
+a). 2), 4)
+b). 1), 3), 4)
+c). 1), 3)
+d). All of the options (1, 2, 3, 4)
+..............................................................................................................................
+No explanation
+..............................................................................................................................
 Linux & Mocha-200
 MultipleChoice
 ____ hold information about the file such as type, size, physical location on disk; times of last access and las file modifications
@@ -403,6 +423,16 @@ inode
 nix access control
 owner
 setuid
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+Linux & Mocha-200
+MultipleChoice
+Which of the following is false about sudo privileges:
+Provides a root password to the user to reduces the possibilities of mistakes
+Allows to run commands at the root level of system operation
+Peak from a log which users used which commands
+Manage the command a user can use on each host
 ..............................................................................................................................
 No explanation
 ..............................................................................................................................
@@ -446,6 +476,16 @@ What line to type in order to see the permission for the owner, group and other 
 ..............................................................................................................................
 No explanation
 ..............................................................................................................................
+Linux & Mocha-200
+MultipleChoice
+Cribdragging takes advantage of the one-time pad (OTP) weaknesses in that:
+The pad was used multiple times to encrypt multiple messages.
+The pad was used multiple times on the same message.
+The pad was not randomly generated
+Someone messed with the ciphertext
+..............................................................................................................................
+The pad was used multiple times to encrypt multiple messages --> in tutorial the same pad is used to encrypt all 3 messages. The pad was not randomly generated --> this is a weakness but not what makes cribdragging work.
+..............................................................................................................................
 Linux & Mocha-300
 MultipleChoice
 Which of the following is not  a function of root administrator/superuser?
@@ -455,6 +495,17 @@ Can modify the operating system
 Can become any other user
 ..............................................................................................................................
 Explanation: passwords are not stored directly anywhere on the machine, so even root cannot read them
+..............................................................................................................................
+Linux & Mocha-300
+MultipleChoice
+What are the functions of cat command-line tool? Select from the following options: 1) Simultaneously create a new file and transfer to it the data from an existing file, 2) Connect the original file contents, 3) If the files with the same name already exists, it will be overwritten by the new, empty file, 4) Read the file contents.
+1), 3), 4)
+2), 3)
+2), 4)
+1), 2)
+All of the options (1, 2, 3, 4)
+..............................................................................................................................
+Cat concatenates only the copies of the files, and there is no effect on the original files.
 ..............................................................................................................................
 Linux & Mocha-300
 MultipleChoice
@@ -494,6 +545,17 @@ To drop privileges permanently, remove privileged UID from both suid and euid
 ..............................................................................................................................
 No explanation
 ..............................................................................................................................
+Linux & Mocha-400
+MultipleChoice
+Words that are likely to be the plaintext in cribdragging, in relation to computer security topics are: 1) Meat, 2) Apple, 3) MFA, 4) CIRW.
+a). 2), 3)
+b). 1), 2), 4)
+c). 1), 3)
+d). 3), 4)
+e). All of the options (1, 2, 3, 4)
+..............................................................................................................................
+Apple is the company, Meat is the food product, MFA – multi factor authentication, CIRW – random letters
+..............................................................................................................................
 Linux & Mocha-500
 MultipleChoice
 Correctly interpret the following line: anna localhost=(eve) foo fu
@@ -505,6 +567,15 @@ anna can run commands foo and fu as user eve
 No explanation
 ..............................................................................................................................
 Linux & Mocha-500
+MultipleChoice
+Correctly pair the elements: Command/File: 1) /etc/passwd, 2) /etc/shadow, 3) umask, 4) Echo ; Purpose: 1] configures the file permissions of files, 2] outputs the strings it is being passed as arguments, 3] contain a list of the accounts and their user ID, encrypted password, home directory and login shell, 4] stores the hash of the password for user accounts
+1) → 3], 2) → 4], 3) → 1], 4) → 2]
+1) → 2], 3) → 4], 2) → 1], 4) → 3]
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+Linux & Mocha-500
+MultipleChoice
 Select the correct matching of the cmd commands: Commands: 1) chown, 2) chgrp, 3) chmod, 4) umask; What it Does: 1] Change file group ownership, 2] View or set file create mask, 3] Change permissions on file, 4] Change file owner (and group ownership).
 1)→ 4], 2) → 1], 3)→ 3], 4)→ 2]
 4)→ 4], 3) → 1], 2)→ 3], 1)→ 2]
@@ -521,6 +592,105 @@ Which of the following is an incorrect use of first octet in nix permission bits
 ..............................................................................................................................
 No explanation
 ..............................................................................................................................
+Blockchain-100 
+MultipleChoice
+Black holes are extraterrestrials’ failed attempts at finding two messages and random inputs that produce the same commitment (computational binding) due to making the computer too big.
+False
+True
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+Blockchain-100
+MultipleChoice
+What description is most appropriate for Permissioned (consortium) blockchain?
+All writers are known but not fully trusted
+Experimentation and development
+All writers are known and fully trusted
+When not all writers are known
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+Blockchain-100 
+MultipleChoice
+Merkle trees work by making a commitment of __ values  at once (for any n) which has final size __ bits.
+a). 2^n, 256
+b). log(n), 128 
+c). n^2, 256
+d). n^3, 512 
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+Blockchain-200 
+MultipleChoice
+A digital signature scheme has 3 algorithms. Select the 3 out of these 4: 1) Gen - generates a pair of keys, 2) Sign - produces a signature under a given private key, 3) Plac - places the signature over a message, 4) Ver - verifies a signature using the associated public key.
+1), 2), 4)
+1), 2), 3)
+2), 3), 4)
+1), 3), 4)
+..............................................................................................................................
+Explanation: While the signature does sign messages, this isn’t a separate algorithm Plac
+..............................................................................................................................
+Blockchain-200 
+MultipleChoice
+Merkle trees ‘one-wayness’ property (cannot infer what’s in the leaf nodes through the internal nodes) allows one to open a leaf node by revealing:
+The data itself and 2 hashed values (in the simplest case)
+The data itself and 1 hashed value (in the simplest case)
+Not the data itself, just the 2 hashed values (in the simplest case)
+Not the data itself and 1 hashed value (in the simplest case)
+..............................................................................................................................
+Explanation: The 2 hashed values are the hash of the other leaf and the commitment 
+..............................................................................................................................
+Blockchain-200 
+MultipleChoice
+A digital identity is created using a [verification key (vk), signature key (sk)] key pair. This makes it possible to:
+All of the above 
+Be anonymous if vk (or H(vk)) looks random
+Sk lets you “speak for” on vk
+Generate as many identities as you want 
+If sk is leaked to may, or everyone shares the same vk, than everyone acts as the same person and is therefore anonymous
+..............................................................................................................................
+Explanation: The 2 hashed values are the hash of the other leaf and the commitment 
+..............................................................................................................................
+Blockchain-300 
+MultipleChoice
+Commitment schemes are a ______ algorithm that repeatedly _____ a message into _____, _____, and _____-looking string of bits.
+Randomized, encodes, short, irreversible, random
+Non-randomized, decode, long, reversible, non-random
+Non-randomized, encodes, short, irreversible, non-random
+Randomized, decode, long, reversible, random
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+Blockchain-300 
+MultipleChoice
+Which element does not form a foundation of contract design?
+Disintermediation
+Privity
+Observability
+Verifiability
+Enforceability
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+Blockchain-300 
+MultipleChoice
+Identify a correct option(s) about smart contracts?
+There is one incorrect option 
+Contact is an address associated with a code stored on the blockchain
+b). Anyone can write a smart contract and deploy it to the network
+c). Smart contracts can rely on external real world events to maintain security and decentralization
+d). There are two incorrect options
+..............................................................................................................................
+Explanation: an incorrect option is c. Smart contracts cannot get information about real world events. Relying on external information can threaten security and decentralization. 
+..............................................................................................................................
+
+
+
+
+
+
+
+
 
 
 
