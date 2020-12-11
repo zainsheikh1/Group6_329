@@ -93,7 +93,7 @@ public class JeopardyFrontend extends Application{
 		
 		//Create Buttons
 		int[] cellValues = {100,200,300,400,500};
-		String[] cellLabels = {"I Hear You're Good at Math","Cybercriminal Methods","Linux & Mocha","Blockchain","History and Rules"};
+		String[] cellLabels = {"I heard you're good at math","Cybercriminal Methods","Linux & Mocha","Blockchain","History and Rules"};
  		for (int i=0; i<5; i++) {
 			for (int j = 0; j<5;j++) {
 				questionBox questionBox = new questionBox(cellValues[j],cellLabels[i]);
