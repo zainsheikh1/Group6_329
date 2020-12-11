@@ -1,4 +1,4 @@
-I heard you're good in math-100
+I heard you're good at math-100
 MultipleChoice
 The number of tries to to have n leading zeros in a hash of a prefix with the number of each try attached at the end (ex. H(prefix0), H(prefix1), H(prefix2), …) is:
 2^n tries 
@@ -8,7 +8,7 @@ Square root (n) tries
 ..............................................................................................................................
 No explanation
 ..............................................................................................................................
-I heard you're good in math-100
+I heard you're good at math-100
 MultipleChoice
 What is lsb2(x) and msb4(x) of 1001100100
 lsb2(x)=00, msb4(x)=1001
@@ -18,7 +18,7 @@ lsb2(x)=011, msb4(x)=101
 ..............................................................................................................................
 No explanation
 ..............................................................................................................................
-I heard you're good in math-200
+I heard you're good at math-200
 MultipleChoice
 Fill in the blanks. The implication of the perfect secrecy of the OTP is that if plaintext is m, ciphertext is c with probability ___
 (½)^n
@@ -28,7 +28,7 @@ n
 ..............................................................................................................................
 No explanation
 ..............................................................................................................................
-I heard you're good in math-200
+I heard you're good at math-200
 MultipleChoice
 We have a perfect secrecy is (Adv^(one-time))(A)=0. Which of the following is not false about A?
 All the above
@@ -38,7 +38,7 @@ A has a limited storage capacity
 ..............................................................................................................................
 No explanation
 ..............................................................................................................................
-I heard you're good in math-200
+I heard you're good at math-200
 MultipleChoice
 Which of the following is not correct about the most significant bit (msb)?
 Determines if number is even or odd
@@ -48,7 +48,7 @@ Leftmost 1 bit
 ..............................................................................................................................
 No explanation
 ..............................................................................................................................
-I heard you're good in math-300
+I heard you're good at math-300
 MultipleChoice
 What is 2^20? (Do not use a calculator)
 1,048,576
@@ -58,7 +58,7 @@ What is 2^20? (Do not use a calculator)
 ..............................................................................................................................
 Explanation: 2^10=1,000; 2^20=1,000,000; 2^30=1,000,000,000
 ..............................................................................................................................
-I heard you're good in math-400
+I heard you're good at math-400
 MultipleChoice
 Convert decimal to binary: 400
 0b110010000
@@ -68,7 +68,7 @@ Convert decimal to binary: 400
 ..............................................................................................................................
 No explanation
 ..............................................................................................................................
-I heard you're good in math-400
+I heard you're good at math-400
 MultipleChoice
 Convert binary to decimal: 0b11111
 31
@@ -78,7 +78,7 @@ Convert binary to decimal: 0b11111
 ..............................................................................................................................
 No explanation
 ..............................................................................................................................
-I heard you're good in math-400
+I heard you're good at math-400
 MultipleChoice
 Convert binary to hexadecimal: 0b0101010101
 155
@@ -88,7 +88,7 @@ Convert binary to hexadecimal: 0b0101010101
 ..............................................................................................................................
 No explanation
 ..............................................................................................................................
-I heard you're good in math-400
+I heard you're good at math-400
 MultipleChoice
 Convert hexadecimal to binary: 0xa22
 0b101000100010
@@ -98,7 +98,7 @@ Convert hexadecimal to binary: 0xa22
 ..............................................................................................................................
 No explanation
 ..............................................................................................................................
-I heard you're good in math-500
+I heard you're good at math-500
 MultipleChoice
 Which of the following is a positional number system that uses a base of 2?
 Binary
@@ -118,7 +118,7 @@ Bit - a binary digit
 Nybble - half an octet, aka  quartet 
 Word - aggregation of bits handled as a unit by a CPU
 ..............................................................................................................................
-I heard you're good in math-500
+I heard you're good at math-500
 MultipleChoice
  CPSC  converted to Hex is:
 435053430a
@@ -128,7 +128,7 @@ MultipleChoice
 ..............................................................................................................................
 No explanation
 ..............................................................................................................................
-I heard you're good in math-500
+I heard you're good at math-500
 MultipleChoice
 What is the outcome of 1110XOR0101 = x, xOR0001=y. What is y?
 1011
@@ -138,7 +138,7 @@ What is the outcome of 1110XOR0101 = x, xOR0001=y. What is y?
 ..............................................................................................................................
 Explanation: 1110XOR0101=1011OR0001=1011
 ..............................................................................................................................
-I heard you're good in math-500
+I heard you're good at math-500
 MultipleChoice
 Which of the following is false?
 1&1 is 0
