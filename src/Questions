@@ -8,6 +8,16 @@ Square root (n) tries
 ..............................................................................................................................
 No explanation
 ..............................................................................................................................
+I heard you're good in math-100
+MultipleChoice
+What is lsb2(x) and msb4(x) of 1001100100
+lsb2(x)=00, msb4(x)=1001
+lsb2(x)=1001, msb4(x)=00
+lsb2(x)=001, msb4(x)=100
+lsb2(x)=011, msb4(x)=101
+..............................................................................................................................
+No explanation
+..............................................................................................................................
 I heard you're good in math-200
 MultipleChoice
 Fill in the blanks. The implication of the perfect secrecy of the OTP is that if plaintext is m, ciphertext is c with probability ___
@@ -48,6 +58,46 @@ What is 2^20? (Do not use a calculator)
 ..............................................................................................................................
 Explanation: 2^10=1,000; 2^20=1,000,000; 2^30=1,000,000,000
 ..............................................................................................................................
+I heard you're good in math-400
+MultipleChoice
+Convert decimal to binary: 400
+0b110010000
+0b001101000011000000110000
+0b0011011000110110
+0b00110110
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+I heard you're good in math-400
+MultipleChoice
+Convert binary to decimal: 0b11111
+31
+28
+34
+54
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+I heard you're good in math-400
+MultipleChoice
+Convert binary to hexadecimal: 0b0101010101
+155
+4876696e46756e3f
+4869
+574c
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+I heard you're good in math-400
+MultipleChoice
+Convert hexadecimal to binary: 0xa22
+0b101000100010
+0b011001100111010101101110
+0b01001100
+0b01010111
+..............................................................................................................................
+No explanation
+..............................................................................................................................
 I heard you're good in math-500
 MultipleChoice
 Which of the following is a positional number system that uses a base of 2?
@@ -67,6 +117,26 @@ Binary - positional number system that uses a base of 2
 Bit - a binary digit
 Nybble - half an octet, aka “quartet”
 Word - aggregation of bits handled as a unit by a CPU
+..............................................................................................................................
+I heard you're good in math-500
+MultipleChoice
+“CPSC” converted to Hex is:
+435053430a
+5269636b526f6c6c
+3a2d29
+59414159
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+I heard you're good in math-500
+MultipleChoice
+What is the outcome of 1110XOR0101 = x, xOR0001=y. What is y?
+1011
+0001
+1110
+1010
+..............................................................................................................................
+Explanation: 1110XOR0101=1011OR0001=1011
 ..............................................................................................................................
 I heard you're good in math-500
 MultipleChoice
@@ -677,14 +747,252 @@ MultipleChoice
 Identify a correct option(s) about smart contracts?
 There is one incorrect option 
 Contact is an address associated with a code stored on the blockchain
-b). Anyone can write a smart contract and deploy it to the network
-c). Smart contracts can rely on external real world events to maintain security and decentralization
-d). There are two incorrect options
+Anyone can write a smart contract and deploy it to the network
+Smart contracts can rely on external real world events to maintain security and decentralization
+There are two incorrect options
 ..............................................................................................................................
 Explanation: an incorrect option is c. Smart contracts cannot get information about real world events. Relying on external information can threaten security and decentralization. 
 ..............................................................................................................................
-
-
+Blockchain-400 
+MultipleChoice
+Which of the following is true about both Smart contracts and Vending machines:
+All of the the options are correct
+With the right inputs, a certain output is guaranteed
+Have a logic programmed into it
+Removes the need for an intermediaries
+Only two of the options are correct
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+Blockchain-400 
+MultipleChoice
+The agent of an organization has the power to make decisions on behalf of another person and the entity. The agent might act in his own interests and the principal cannot control the agent’s actions. Is this description applicable to DAO?
+No
+Yes
+In some cases
+In few cases
+..............................................................................................................................
+Explanation: DAO eliminates the need to involve a mutually acceptable trusted third party in a financial translation. 
+..............................................................................................................................
+Blockchain-500 
+MultipleChoice
+Which of the following statements is false about Bitcoin?
+The transactions are irrevocable but allows to claim a legal recourse
+Uses far more energy per transaction than all the world's banks put together
+Bitcoin addresses should only be used once
+Does not have economically responsive fiscal policy
+..............................................................................................................................
+Explanation: Bitcoin transactions are irreversible, provide no dispute resolution or legal recourse and do not guarantee fraud protection.
+..............................................................................................................................
+Blockchain-500 
+MultipleChoice
+SHA256 is: 1) SHA stands for Secure Hash Algorithm and 256 is the length of the output in bits, 2) A NIST standardized hash algorithm used in bitcoin, 3) Replaced with SHA3 due to the chance of finding collisions being less than 100 years.
+1), 2)
+1), 3)
+2, 3)
+All of the options (1, 2, 3)
+None of the options
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+History and Rules-100 
+MultipleChoice
+Reliability
+Integrity
+Which of the below is not one of three elements of the security triad:
+Availability
+Confidentiality
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+History and Rules-100 
+MultipleChoice
+Who mentioned the story of Uncle Milton Industries selling ant farms and the importance of the security mindset?
+Schneier
+Adleman
+Shamir
+Rivest
+..............................................................................................................................
+Answer: How dare you not know the three recipients of  Association for Computing Machinery's 2002 Turing Award “for their seminal contributions to the theory and practical application of public-key cryptography.
+..............................................................................................................................
+History and Rules-100 
+MultipleChoice
+Using a Tor browser, your personal IP address will not be known resulting in your location (city) being incorrect.
+True 
+False 
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+History and Rules-200 
+MultipleChoice
+PIPEDA is Canada’s private-sector privacy law. Select 3 principles of PIPEDA of the following 4 statements: 1) Limit collection, 2) Be discreet, 3) Use appropiate safeguards, 4) Be accountable
+1), 3), 4)
+1), 2), 3)
+2), 3), 4)
+1), 2), 4)
+..............................................................................................................................
+Explanation:
+Ten principles of PIPEDA:
+Identify purposes of data collection
+Obtain consent
+Limit collection
+Limit use, disclosure and retention
+Use appropriate safeguards
+Give individual access
+Be accurate
+Be open
+Be accountable
+Provide recourse
+..............................................................................................................................
+History and Rules-200 
+MultipleChoice
+What was one of the largest ever breach of customer accounts, discussed in the lecture? 
+Adobe
+Equifax
+eBay
+Canva
+..............................................................................................................................
+Explanation: Refer to the following reference: Reference: https://www.csoonline.com/article/2130877/the-biggest-data-breaches-of-the-21st-century.html
+..............................................................................................................................
+History and Rules-200 
+MultipleChoice
+A secure system is one you can rely on to allow authorized modifications to resources and keep only your public data confidential.
+False
+True
+..............................................................................................................................
+Explanation: A secure system is one you can rely on to keep your personal data confidential. 
+..............................................................................................................................
+History and Rules-200 
+MultipleChoice
+Find the author of the following principle: “It must not require secrecy, and it can easily fall into the hands of the enemy”. 
+Kerkchoff
+Blastland
+Harrison
+Satlzer
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+History and Rules-200 
+MultipleChoice
+According to the Principle of Easiest Penetration, computer security is a game with rules that applies to both defending and attacking teams. 
+False
+True
+..............................................................................................................................
+Explanation: A: The attacker can and will use any means of penetration.
+..............................................................................................................................
+History and Rules-200 
+MultipleChoice
+Which of the following is true about 2019 NIST password guidelines
+At least 10 attempts before lockout
+Supports at least 32 characters
+b). Allow “password hints” and “secret questions”
+c). Do not allow passwords to be copy-pasted into password fields
+..............................................................................................................................
+Explanation: NIST SSupports at least 64 characters; no “password hints” and “secret questions”; allow passwords to be copy-pasted into password fields
+..............................................................................................................................
+History and Rules-200 
+MultipleChoice
+Your browsers fingerprint conveys _____ and as such, a fingerprint with a large size has more:
+bits of identifying information, information on you (your OS, screen resolution, language set, etc.)
+the list of all ads seen, ads on your browser
+all invisible trackers on it, invisible trackers
+bits of identifying information, information on the websites you visit (their number of visits, their most visited pages, etc.)
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+History and Rules-300 
+MultipleChoice
+What is the idea behind the “Separation of privilege” for the protection/security mechanism. 
+When a protection mechanism require two keys, it allows for two-person control to prevent unilateral action by attackers. 
+Base access decision on permission rather than exclusion
+Security design should not depend on the ignorance of potential attacker
+Every program and user should operate while invoking as few privileges as possible.
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+History and Rules-300 
+MultipleChoice
+A unique fingerprint online means that your web browser:
+is unique and you can be tracked as you navigate different websites within that web browser
+is not unique and you cannot be tracked as you navigate different websites within that web browser
+is unique and you cannot be tracked as you navigate different websites within that web browser
+is not unique and you can be tracked as you navigate different websites within that web browser
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+History and Rules-300 
+MultipleChoice
+________ process of proving the claimed identity of the agent
+authentication
+authorizations
+identification
+verification
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+History and Rules-300 
+MultipleChoice
+Which of the following add-on is described by the following: It learns to block invisible trackers. Instead of keeping lists of what to block, it automatically discovers trackers based on their behavior.
+Privacy Badger
+NoScript Security Suite
+Lightbeam 3.0
+Adblock Plus
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+History and Rules-400 
+MultipleChoice
+What argument is not supported in the Nothing to Hide paper:
+Prevent terror attacks
+Diminishes people’s rights
+Allows government to leak information about a person even if the person did not engage in wrongdoing
+Mass Surveillance can disproportionately affect certain groups of society
+..............................................................................................................................
+Explanation: Read the paper at https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=1159&context=faculty_publications 
+..............................................................................................................................
+History and Rules-400 
+MultipleChoice
+Which of the following of the about Tor is not false?
+All of the options are correct.
+Isolates each website you visit so third-party trackers and ads cannot follow you
+Automatically clears any cookies and browsing history when you are done browsing
+Makes it difficult for the user to be fingerprinted 
+Prevents someone watching your connection from knowing what websites you visit
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+History and Rules-400 
+MultipleChoice
+Confinement ensures that misbehaving users and applications cannot harm the rest of the system. Identify all level(s) of enforcing confinement of the following options: 1) Thread separation, 2) Physical/hardware separation, 3) Arbitrary Separation, 4) Temporal separation.
+1), 2), 4)
+3), 4)
+2)
+None of the options
+All of the options (1, 2, 3, 4)
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+History and Rules-500 
+MultipleChoice
+You send your public key to me over the WhatsApp. However, I do not know whether this key is indeed yours and this messaging app is not a secure channel. There is a possibility that Eve intercepted and replaced your key with hers. One way to solve this problem is to involve Bob, who knows your public key and I know his public key. How Bob can help us?
+He signs your key by taking your public key and encrypt it with his private key
+He signs your key by taking you private key and encrypt it with his private key
+He signs your key by taking you public key and encrypt it with his public key
+We do not need Bob because you can email your public key to me, and email is more secure than WhatsApp
+..............................................................................................................................
+No explanation
+..............................................................................................................................
+History and Rules-500 
+MultipleChoice
+How do websites know your IP address and location (on most browsers)? When you visit a website: 1) IP addresses between the server hosting the website and your IP address must be exchanged to exchange data, 2) your IP address is known in your fingerprint and this IP address is given to the server hosting the website, 3) your IP address is given away but you’re not given the IP address of the server hosting the website.
+1), 2)
+2), 3)
+1), 3)
+None of the options
+All of the options (1, 2, 3)
+..............................................................................................................................
+No explanation
+..............................................................................................................................
 
 
 
