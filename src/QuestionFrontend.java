@@ -50,7 +50,7 @@ public class QuestionFrontend{
 		
 		
 		Label questionText = new Label(this.currentQuestion.getQuestion());
-		questionText.setMaxWidth(800);
+		questionText.setMaxWidth(1200);
 		questionText.setWrapText(true);
 		this.layoutManager.add(questionText,0,0);
 		
