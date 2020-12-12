@@ -111,7 +111,8 @@ public class JeopardyFrontend extends Application{
  		backButton.setTranslateY(10);
  		backButton.setStyle("-fx-font: 10 tahoma; -fx-base: #00ff00;");
 		
- 		backButton.setOnAction ((event) -> { //changes scene
+ 		backButton.setOnAction ((event) -> {//changes scene and clears button list
+ 			buttonList.clear();
 			window.setScene(new Scene(setStart()));
 		});
  		
