@@ -254,7 +254,7 @@ An encryption scheme has three algorithms which include: 1) Gen creates (generat
 2), 3)
 All of the options (1, 2, 3, 4)
 ..............................................................................................................................
-Explanation: Gen, Enc and Dec are three algorithms of an encryption scheme.
+Explanation: Gen, Enc and Dec are the only three algorithms of an encryption scheme. They occur in the order, first Gen, then Enc, and lastly Dec.
 ..............................................................................................................................
 Cybercriminal Methods-300
 MultipleChoice
@@ -317,7 +317,7 @@ Of the following options, select the notable malware events in history: 1) STUXn
 None of the options
 All of the options
 ..............................................................................................................................
-Explanation: creeper, reaper, wabbit, animal & prevade, elk cloner, code red, SQL Slammer, Sasser, STUXnet
+Explanation: creeper, reaper, wabbit, animal & prevade, elk cloner, code red, SQL Slammer, Sasser, STUXnet are all notable malware events
 ..............................................................................................................................
 Cybercriminal Methods-400
 MultipleChoice
