@@ -29,7 +29,7 @@ public class MultipleChoiceButton {
 		button.setTextFill(javafx.scene.paint.Color.RED);
 	}
 	public void setRightStyle() {
-		button.setTextFill(javafx.scene.paint.Color.GREEN);
+		button.setTextFill(javafx.scene.paint.Color.LAWNGREEN);
 	}
 	
 	public boolean getIsCorrect() {
