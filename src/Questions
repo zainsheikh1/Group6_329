@@ -6,7 +6,7 @@ Log-base 2-(n) tries
 Square root (n) tries 
 ½(n)^2 tries
 ..............................................................................................................................
-No explanation
+Explanation: 2^n tries
 ..............................................................................................................................
 I heard you're good at math-100
 MultipleChoice
@@ -16,7 +16,7 @@ lsb2(x)=1001, msb4(x)=00
 lsb2(x)=001, msb4(x)=100
 lsb2(x)=011, msb4(x)=101
 ..............................................................................................................................
-No explanation
+MSB is the highest digit, but and the LSB is the lowest digit bit. In the binary data, the left end is the highest digit, while the right end is the lowest digit. 
 ..............................................................................................................................
 I heard you're good at math-200
 MultipleChoice
@@ -26,17 +26,17 @@ Fill in the blanks. The implication of the perfect secrecy of the OTP is that if
 1/2
 n
 ..............................................................................................................................
-No explanation
+Explanation: ciphertext is c with probability (½)^n.
 ..............................................................................................................................
 I heard you're good at math-200
 MultipleChoice
 We have a perfect secrecy is (Adv^(one-time))(A)=0. Which of the following is not false about A?
-All the above
+All the options.
 A is allowed unbounded computational capacity
 A is assumed to be the cleverest algorithm in existence
 A has a limited storage capacity
 ..............................................................................................................................
-No explanation
+Explanation: A is allowed unbounded computational capacity, it is assumed to be the cleverest algorithm in existence, and it has a limited storage capacity.
 ..............................................................................................................................
 I heard you're good at math-200
 MultipleChoice
@@ -46,7 +46,7 @@ Determines length of binary representation
 Means leftmost bit in a fixed-width representation
 Leftmost 1 bit
 ..............................................................................................................................
-No explanation
+The lsb also determines whether the number is even or odd.
 ..............................................................................................................................
 I heard you're good at math-300
 MultipleChoice
@@ -66,7 +66,7 @@ Convert decimal to binary: 400
 0b0011011000110110
 0b00110110
 ..............................................................................................................................
-No explanation
+Explanation: use right-to-left repeated division-by-2 or left-to-right repeated subtraction.
 ..............................................................................................................................
 I heard you're good at math-400
 MultipleChoice
@@ -76,7 +76,7 @@ Convert binary to decimal: 0b11111
 34
 54
 ..............................................................................................................................
-No explanation
+Explanation: use right-to-left weighted summation or left-to-right double-and-add methods.
 ..............................................................................................................................
 I heard you're good at math-400
 MultipleChoice
@@ -86,7 +86,7 @@ Convert binary to hexadecimal: 0b0101010101
 4869
 574c
 ..............................................................................................................................
-No explanation
+Explanation: use right-to-left weighted summation or left-to-right double-and-add methods.
 ..............................................................................................................................
 I heard you're good at math-400
 MultipleChoice
@@ -96,7 +96,7 @@ Convert hexadecimal to binary: 0xa22
 0b01001100
 0b01010111
 ..............................................................................................................................
-No explanation
+Explanation: use reverse substitution.
 ..............................................................................................................................
 I heard you're good at math-500
 MultipleChoice
@@ -126,7 +126,7 @@ MultipleChoice
 3a2d29
 59414159
 ..............................................................................................................................
-No explanation
+Explanation: CPSC --> 435053430a
 ..............................................................................................................................
 I heard you're good at math-500
 MultipleChoice
@@ -154,7 +154,7 @@ Since plenty of collisions exist in cryptographic hash functions, then they are 
 False
 True 
 ..............................................................................................................................
-No explanation
+Cryptographic hash algorithms are long enough for random matches to be improbale, safe enough that it would be tough to find collisions and fast enough that they can be used anywhere.
 ..............................................................................................................................
 Cybercriminal Methods-100
 MultipleChoice
@@ -162,18 +162,18 @@ If the encryption scheme used is secure than the attacker always wins the indist
 False
 True
 ..............................................................................................................................
-Explanation: attacker always loses
+Explanation: attacker always loses.
 ..............................................................................................................................
 Cybercriminal Methods-200
 MultipleChoice
-The preimage resistance(s) is/are: 1) The hash of a message reveals nothing about a message (can only confirm or reject guesses), 2) Given the message and its hash, it’s hard to find another message that would give the same hash, 3) There are better ways to guess a message beyond simply guess and check, 4) The number of tries to get a collision is very small 
+Choose correct statements about preimage resistance(s): 1) the hash of a message reveals nothing about a message (can only confirm or reject guesses), 2) given the message and its hash, it’s hard to find another message that would give the same hash, 3) there are better ways to guess a message beyond simply guess and check, 4) the number of tries to get a collision is very small.
 1), 2)
 1), 3), 4)
 2), 4)
 3)
 All of the options (1, 2, 3, 4)
 ..............................................................................................................................
-No explanation
+Explanation: the hash of a message reveals nothing about a message and it’s hard to find another message that would give the same hash.
 ..............................................................................................................................
 Cybercriminal Methods-200
 MultipleChoice
@@ -182,7 +182,7 @@ Virus
 Worm
 Adware
 ..............................................................................................................................
-Explanation: Logic bomb can get activated when the user intentionally runs the code.
+Explanation: logic bomb can get activated when the user intentionally runs the code.
 ..............................................................................................................................
 Cybercriminal Methods-200
 MultipleChoice
@@ -192,7 +192,7 @@ Exploits security flaws in widely deployed software as a path to infection
 Worm can modify and delete files
 The worm can spread via a dictionary attack against local accounts
 ..............................................................................................................................
-Explanation: Worms can replicate itself without any human interactions, and does not need to attach itself to a software program to cause damage
+Explanation: worms can replicate itself without any human interactions, and does not need to attach itself to a software program to cause damage
 ..............................................................................................................................
 Cybercriminal Methods-200
 MultipleChoice
@@ -202,7 +202,7 @@ Friends should create different passwords
 Friends can use the same salt for every hashed password
 Friends can use a short, random salt
 ..............................................................................................................................
-Explanation: Unsalted passwords chosen by humans tend to be vulnerable to dictionary attacks since they have to be short and meaningful enough to be memorized. By salting the passwords with two random characters, even if two accounts use the same passwords, no one can discover this just by reading hashes.
+Explanation: unsalted passwords chosen by humans tend to be vulnerable to dictionary attacks since they have to be short and meaningful enough to be memorized. By salting the passwords with two random characters, even if two accounts use the same passwords, no one can discover this just by reading hashes.
 ..............................................................................................................................
 Cybercriminal Methods-200
 MultipleChoice
@@ -212,15 +212,15 @@ Two inputs do not always map to two outputs
 Includes an unpredictable mapping of inputs and outputs
 Input is retrieved to a 64 bit string of specific length
 ..............................................................................................................................
-Explanation: Cryptographic hash functions H turns any message into a short, unique and irreversible string of bits.
+Explanation: cryptographic hash functions H turns any message into a short, unique and irreversible string of bits.
 ..............................................................................................................................
 Cybercriminal Methods-200
 MultipleChoice
-Determine what type of encryption is described below:the size of cipher text is same in size or smaller than the original plain text; transfers large amount of data; provides confidentiality; low resource utilization.
+Determine what type of encryption is described below: the size of cipher text is same in size or smaller than the original plain text; transfers large amount of data; provides confidentiality; low resource utilization.
 Symmetric
 Asymmetric
 ..............................................................................................................................
-No explanation
+Explanation: symmetric encryption involves a single key for both decryption and encryption, and the asymmetric encryption uses a private key for decryption and  public key for encryption.
 ..............................................................................................................................
 Cybercriminal Methods-200
 MultipleChoice
@@ -236,7 +236,7 @@ If an email has an urgent call to action such as: you have 24 hours, renew immed
 False
 True
 ..............................................................................................................................
-No explanation
+Explanation: an unfamiliar tone, grammar and spelling errors, inconsistencies in domain names and links, treats, urgent call for action, dubious attachments, requests for banking information are common signs of phishing emails. 
 ..............................................................................................................................
 Cybercriminal Methods-200
 MultipleChoice
@@ -244,7 +244,7 @@ The indistinguishability game defines secrecy for encryption schemes such as the
 True
 False
 ..............................................................................................................................
-No explanation
+Explanation: the ciphertext will be impossible to decrypt or break if the following conditions are met: the key must be truly random, must be at least as long as the plaintext, must never be reused in whole or in part, must be kept a secret.
 ..............................................................................................................................
 Cybercriminal Methods-300
 MultipleChoice
@@ -254,7 +254,7 @@ An encryption scheme has three algorithms which include: 1) Gen creates (generat
 2), 3)
 All of the options (1, 2, 3, 4)
 ..............................................................................................................................
-No explanation
+Explanation: Gen, Enc and Dec are three algorithms of an encryption scheme.
 ..............................................................................................................................
 Cybercriminal Methods-300
 MultipleChoice
@@ -265,7 +265,7 @@ b). If the number of pigeons (number of possible hashes) is much larger than the
 c). If the number of holes for pigeons is much larger than the range of the number of pigeons (number of possible hashes), than many collisions exist
 d). If the domain of a hash function is much smaller than its range, then many collisions exist
 ..............................................................................................................................
-No explanation
+Explanation: the Pigeonhole Principle tells that if n+1 or more pigeons are located in n holes, then one hole contains two or more pigeons.
 ..............................................................................................................................
 Cybercriminal Methods-300
 MultipleChoice
@@ -275,7 +275,7 @@ Polymorphic code can be used to generate encryption algorithms.
 Every time the virus replicates, it modifies itself to look different
 To detect a polymorphic virus, look for behaviours such as changes to system settings
 ..............................................................................................................................
-Explanation: The code changes itself each time it runs, BUT the semantics of the code will not change at all. 
+Explanation: the code changes itself each time it runs, BUT the semantics of the code will not change at all. 
 ..............................................................................................................................
 Cybercriminal Methods-300
 MultipleChoice
@@ -283,7 +283,7 @@ The Flame malware used the hash-then-sign paradigm to make victims believe it wa
 True
 False
 ..............................................................................................................................
-No explanation
+Explanation: a signature scheme built based on the hash-and-sign paradigm first hashes the message and then signs the hash. σ(H(M)) is no more secure than the hash function H against a collision-finding attack. 
 ..............................................................................................................................
 Cybercriminal Methods-300
 MultipleChoice
@@ -293,6 +293,7 @@ A misspelling of fishing
 Malware hidden within a seemingly innocuous or desirable program such as a calculator application for a smartphone
 Surreptitiously gathers information about users activities and transmits them to a third party (often bundled with some   legitimate  software)
 ..............................................................................................................................
+Explanation:
 Trojan - malware hidden within a seemingly innocuous or desirable program such as a calculator application for a smartphone
 Phishing - pretending to be a trusted source through electronic communication so a victim is tricked into giving you sensitive information (passwords, credit/debit card details)
 Spyware - Surreptitiously gathers information about users activities and transmits them to a third party (often bundled with some   legitimate  software)
@@ -327,7 +328,7 @@ Ways to recognize if an email is a phishing email include: 1) Hovering over a li
 None of the options 
 All of the options
 ..............................................................................................................................
-No explanation
+Explanation: there are several ways to recognize a phishing email: email is sent from a public email domain, misspelt domain name, email is poorly written, presence of suspicious attachments and message calls for urgent actions.
 ..............................................................................................................................
 Cybercriminal Methods-400
 MultipleChoice
@@ -337,7 +338,7 @@ Alice and Bob have no pre-shaded pad
 H(password) is used instead of a pad
 Eve tinkers with the ciphertext
 ..............................................................................................................................
-No explanation
+Explanation: using pad for one encryption will not compromise the perfect secrecy of OTP.
 ..............................................................................................................................
 Cybercriminal Methods-400
 MultipleChoice
@@ -347,7 +348,7 @@ Viruses can quickly spread an include payload by downloading more malware
 Viruses spread when files are shared between users
 Viruses can put themselves in the boot sector and run before the OS boots
 ..............................................................................................................................
-Explanation: For documents with macros, virus edits other documents and inserts as a macro to start automatically when the file is opened. 
+Explanation: for documents with macros, virus edits other documents and inserts as a macro to start automatically when the file is opened. 
 ..............................................................................................................................
 Cybercriminal Methods-400
 MultipleChoice
@@ -357,7 +358,7 @@ Input the same messages x0 and x0 that yield different outputs h(x0) = y and h(x
 Input different messages x0 and x1 that yield the same output h(x0) = h(x1) = y
 Input different messages x0 and x1 that yield different outputs h(x0) = y and h(x1) = z
 ..............................................................................................................................
-No explanation
+Explanation: impossible to input the same messages x0 and x0 that yield the same output h(x0) = h(x0) = y
 ..............................................................................................................................
 Cybercriminal Methods-400
 MultipleChoice
@@ -367,7 +368,7 @@ The attacker had an advantage and the strategy to win
 The attacker had an advantage but no strategy to win
 The attacker had no advantage but did have a strategy to win
 ..............................................................................................................................
-Explanation: Easy for attacker to win - example: key = 6,6, message1 = 0,0 message2= 9,9 then encryption = 6,6 and 15,15 - can easily tell what is message1 and what is message2.
+Explanation: easy for attacker to win - example: key = 6,6, message1 = 0,0 message2= 9,9 then encryption = 6,6 and 15,15 - can easily tell what is message1 and what is message2.
 ..............................................................................................................................
 Cybercriminal Methods-500
 MultipleChoice
@@ -375,7 +376,7 @@ The one-time pad (OTP) was invented in 1919 by an engineer called Gilbert Vernam
 True
 False
 ..............................................................................................................................
-No explanation
+Explanation: true.
 ..............................................................................................................................
 Cybercriminal Methods-500
 MultipleChoice
@@ -385,7 +386,7 @@ The attacker had an advantage and the strategy to win
 The attacker had an advantage but no strategy to win
 The attacker had no advantage but did have a strategy to win
 ..............................................................................................................................
-Explanation: If the keys are longer, when  encrypt  and add the keys (ex. 40) to the messages (ex. 9) than the number was always a double digit number so no way to tell what the key could have been.
+Explanation: if the keys are longer, when  encrypt  and add the keys (ex. 40) to the messages (ex. 9) than the number was always a double digit number so no way to tell what the key could have been.
 ..............................................................................................................................
 Cybercriminal Methods-500
 MultipleChoice
@@ -395,17 +396,17 @@ Prints the 32-character md5 hash of a given file, using the MD5 algorithm.
 Takes all 32-characters (128-bits) of an md5 hash of a file that are digits and sums them all up, using the MD5 algorithm.
 Given two files, it adds the 32-character (128-bit) checksums of those two files, using the MD5 algorithm.
 ..............................................................................................................................
-No explanation
+Explanation: md5sum prints a 32-character (128-bit) checksum of the given file, using the MD5 algorithm.
 ..............................................................................................................................
 Cybercriminal Methods-500
 MultipleChoice
 What should you do to limit the damage if you fall for a phishing scam?
-Delete the phishing email you fell for.
+Delete the phishing email you fell for
 Turn your computer off and on again to get rid of any possible malware.
 Change any compromised passwords you gave away.
 Call 911 and ask for the help of the information security personnel
 ..............................................................................................................................
-No explanation
+Explanation: deleting the phishing email limits the damage.
 ..............................................................................................................................
 Cybercriminal Methods-500
 MultipleChoice
@@ -413,7 +414,7 @@ Select the correct matching of the malware taxonomy: Malware = 1) Spyware, 2) Ro
 1)→2], 2)→5], 3)→3], 4)→4] 5)→1]
 5)→3], 4)→5], 3)→2], 2)→4] 1)→1]
 ..............................................................................................................................
-No explanation
+Explanation: review lecture notes.
 ..............................................................................................................................
 Linux & Mocha-100
 MultipleChoice
@@ -421,7 +422,7 @@ ssh keygen is a tool for creating a new authentication key pair for SSH, which i
 True 
 False
 ..............................................................................................................................
-No explanation
+Explanation: true.
 ..............................................................................................................................
 Linux & Mocha-100
 MultipleChoice
@@ -429,7 +430,7 @@ Everything is a textfile describes one of the defining features of Unix, and its
 False
 True 
 ..............................................................................................................................
-Exploration: Everything is a file on Linux is a generalization concept. If something is not a file, then it is running as a process on the system. 
+Exploration: everything is a file on Linux is a generalization concept. If something is not a file, then it is running as a process on the system. 
 ..............................................................................................................................
 Linux & Mocha-100
 MultipleChoice
@@ -450,7 +451,7 @@ Directory
 Folder
 Virtual machine
 ..............................................................................................................................
-Exploration: The effect of setting the permission on a directory, rather than a file, is one the most frequently misunderstood file permission issues. 
+Exploration: the effect of setting the permission on a directory, rather than a file, is one the most frequently misunderstood file permission issues. 
 ..............................................................................................................................
 Linux & Mocha-100
 MultipleChoice
@@ -458,27 +459,27 @@ Grep command is used to search plain-text data sets for lines that match a regul
 True 
 False
 ..............................................................................................................................
-No explanation
+Explanation: true.
 ..............................................................................................................................
 Linux & Mocha-100
 MultipleChoice
-Strategies to decipher ciphertexts with cribdragging include making the cribword: 1) The rarest words you can think of, 2) The most common words you can think of, 3) The longest word in the English language (pneumonoultramicroscopicsilicovolcanoconiosis), 4) A reasonable word or fragment of a word that would come after the plaintext (aka the already deciphered ciphertext). 
+Strategies to decipher ciphertexts with cribdragging include making the cribword: 1) The rarest words you can think of, 2) The most common word you can think of, 3) The longest word in the English language (pneumonoultramicroscopicsilicovolcanoconiosis), 4) A reasonable word or fragment of a word that would come after the plaintext (aka the already deciphered ciphertext). 
 2), 4)
 1), 3), 4)
 1), 3)
 All of the options (1, 2, 3, 4)
 ..............................................................................................................................
-No explanation
+Explanation: strategies to decipher ciphertexts with cribdragging include making the cribword the most common word you can think of and a reasonable word that would come after the plaintext.
 ..............................................................................................................................
 Linux & Mocha-200
 MultipleChoice
-____ hold information about the file such as type, size, physical location on disk; times of last access and las file modifications
+____ hold information about the file such as type, size, physical location on disk; times of last access and last file modifications.
 inode
 nix access control
 owner
 setuid
 ..............................................................................................................................
-No explanation
+Explanation: inode hold information about the file.
 ..............................................................................................................................
 Linux & Mocha-200
 MultipleChoice
@@ -488,18 +489,9 @@ Allows to run commands at the root level of system operation
 Peak from a log which users used which commands
 Manage the command a user can use on each host
 ..............................................................................................................................
-No explanation
+Explanation: sudo does not provide a root password to the user to reduces the possibilities of mistakes
 ..............................................................................................................................
-Linux & Mocha-200
-MultipleChoice
-Which of the following is false about sudo privileges:
-Provides a root password to the user to reduces the possibilities of mistakes
-Allows to run commands at the root level of system operation
-Peak from a log which users used which commands
-Manage the command a user can use on each host
-..............................................................................................................................
-No explanation
-..............................................................................................................................
+
 Linux & Mocha-200
 MultipleChoice
 Which of the following about the passphrase is false?
@@ -518,7 +510,7 @@ Randomart
 Passphrase 
 ssh keypair
 ..............................................................................................................................
-No explanation
+Explanation: fingerprint is based on the host’s public key.
 ..............................................................................................................................
 Linux & Mocha-200
 MultipleChoice
@@ -528,7 +520,7 @@ What line to type in order to see the permission for the owner, group and other 
 /bin/ls
 /bin/ls -c
 ..............................................................................................................................
-No explanation
+Explanation: /bin/ls -l
 ..............................................................................................................................
 Linux & Mocha-200
 MultipleChoice
@@ -538,7 +530,7 @@ The pad was used multiple times on the same message.
 The pad was not randomly generated
 Someone messed with the ciphertext
 ..............................................................................................................................
-The pad was used multiple times to encrypt multiple messages --> in tutorial the same pad is used to encrypt all 3 messages. The pad was not randomly generated --> this is a weakness but not what makes cribdragging work.
+Example: the pad was used multiple times to encrypt multiple messages --> in tutorial the same pad is used to encrypt all 3 messages. The pad was not randomly generated --> this is a weakness but not what makes cribdragging work.
 ..............................................................................................................................
 Linux & Mocha-300
 MultipleChoice
@@ -559,7 +551,7 @@ What are the functions of cat command-line tool? Select from the following optio
 1), 2)
 All of the options (1, 2, 3, 4)
 ..............................................................................................................................
-Cat concatenates only the copies of the files, and there is no effect on the original files.
+Explanation: cat concatenates only the copies of the files, and there is no effect on the original files.
 ..............................................................................................................................
 Linux & Mocha-300
 MultipleChoice
@@ -569,7 +561,7 @@ Read permission grants the ability to read the contents of files in the director
 Write permission grants the ability to modify the entries in the directory, which includes creating files, deleting files and renaming files without the set execute permission.
 All of the above
 ..............................................................................................................................
-No explanation
+Explanation: execute permission must be set for executable programs, in order to allow the operating system to run them.
 ..............................................................................................................................
 Linux & Mocha-300
 MultipleChoice
@@ -579,7 +571,7 @@ Real UID (ruid)
 Saved UID (suid)
 User ID
 ..............................................................................................................................
-No explanation
+Explanation: setuid makes program run with euid of the owner
 ..............................................................................................................................
 Linux & Mocha-400
 MultipleChoice
@@ -587,7 +579,7 @@ MultipleChoice
 False
 True
 ..............................................................................................................................
-Explanation:  sudo  can be invoked with non-root passwords;  su  requires root password
+Explanation: sudo can be invoked with non-root passwords; su requires root password
 ..............................................................................................................................
 Linux & Mocha-400
 MultipleChoice
@@ -597,7 +589,7 @@ To acquire privilege, assign suid to be a privileged UID
 To drop privileges temporarily, removed privileged UID from suid save it in euid
 To drop privileges permanently, remove privileged UID from both suid and euid
 ..............................................................................................................................
-No explanation
+Explanation: to acquire privilege, assign euid to be a privileged UID
 ..............................................................................................................................
 Linux & Mocha-400
 MultipleChoice
@@ -608,7 +600,7 @@ Words that are likely to be the plaintext in cribdragging, in relation to comput
 3), 4)
 All of the options (1, 2, 3, 4)
 ..............................................................................................................................
-Apple is the company, Meat is the food product, MFA – multi factor authentication, CIRW – random letters
+Explanation: apple is the company, Meat is the food product, MFA – multi factor authentication, CIRW – random letters
 ..............................................................................................................................
 Linux & Mocha-500
 MultipleChoice
@@ -618,7 +610,7 @@ eve can use sudo to run foo or fu
 eve can use sudo on localhost
 anna can run commands foo and fu as user eve
 ..............................................................................................................................
-No explanation
+Explanation: anna can use sudo to run commands foo or fu as user eve
 ..............................................................................................................................
 Linux & Mocha-500
 MultipleChoice
@@ -626,7 +618,7 @@ Correctly pair the elements: Command/File: 1) /etc/passwd, 2) /etc/shadow, 3) um
 1) → 3], 2) → 4], 3) → 1], 4) → 2]
 1) → 2], 3) → 4], 2) → 1], 4) → 3]
 ..............................................................................................................................
-No explanation
+Explanation: review lecture notes.
 ..............................................................................................................................
 Linux & Mocha-500
 MultipleChoice
@@ -634,7 +626,7 @@ Select the correct matching of the cmd commands: Commands: 1) chown, 2) chgrp, 3
 1)→ 4], 2) → 1], 3)→ 3], 4)→ 2]
 4)→ 4], 3) → 1], 2)→ 3], 1)→ 2]
 ..............................................................................................................................
-No explanation
+Explanation: review lecture notes.
 ..............................................................................................................................
 Linux & Mocha-500
 MultipleChoice
@@ -644,7 +636,7 @@ Which of the following is an incorrect use of first octet in nix permission bits
 1(001;t) means sticky
 4(100;s) means setuid
 ..............................................................................................................................
-No explanation
+Explanation: 2(010;s) means setgid, 1(001;t) means sticky, 4(100;s) means setuid.
 ..............................................................................................................................
 Blockchain-100
 MultipleChoice
@@ -652,7 +644,7 @@ Black holes are extraterrestrials’ failed attempts at finding two messages and
 False
 True
 ..............................................................................................................................
-No explanation
+Explanation: 
 ..............................................................................................................................
 Blockchain-100
 MultipleChoice
