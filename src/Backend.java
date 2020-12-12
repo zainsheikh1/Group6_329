@@ -14,7 +14,7 @@ public class Backend {
 	public static Map<String, ArrayList<Question>> map = new HashMap<>();
 
 	//Random Number Generator
-	private static int random(int min, int max) {
+	public static int random(int min, int max) {
 		return (int) (Math.random() * (max-min + 1) + min);
 	}
 	
@@ -24,7 +24,7 @@ public class Backend {
 	 * Description: Creates the hashmap for all questions, using the Question categories as keys
 	 */
 		public static void createQuestionsMap() throws FileNotFoundException {
-		File file = new File("src/Questions");
+		File file = new File("src/Questions.");
 		Scanner scan = new Scanner(file);
 		
 		
@@ -83,5 +83,61 @@ public class Backend {
 		}
 		
 	}
+	
+	
+	//Check Function
+	private static boolean check(String pt, int digits) {
+		if(pt.length() != digits) {
+			return false;
+		}
+		for(int i=0; i<pt.length(); i++) {
+			if(!Character.isDigit(pt.charAt(i))) {
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	
+	//Convert to cyphertext
+	public String getCypherText(String pt) {
+		int k1 = random(0,9);
+		int k2 = random(0,9);
+		int k3 = k1;
+		int k4 = k2;
+		
+		int n1 = Character.getNumericValue(pt.charAt(0));
+		int n2 = Character.getNumericValue(pt.charAt(1));
+		int n3 = Character.getNumericValue(pt.charAt(2));
+		int n4 = Character.getNumericValue(pt.charAt(3));
+		
+		n1 += k1;
+		if(n1>9) {
+			n1 -= 10;
+		}
+		n2 += k2;
+		if(n2>9) {
+			n2 -= 10;
+		}
+		n3 += k3;
+		if(n3>9) {
+			n3 -= 10;
+		}
+		n4 += k4;
+		if(n4>9) {
+			n4 -= 10;
+		}
+		
+		String cypherText = "" + n1 + n2 + n3 + n4;
+		return cypherText;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }
