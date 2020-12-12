@@ -196,7 +196,7 @@ public class JeopardyFrontend extends Application{
 	@Override
 	public void start(Stage primaryStage) throws Exception{
 		//plays music
-		//mPlayer.setAutoPlay(true);
+		mPlayer.setAutoPlay(true);
 		mPlayer.setCycleCount(cycleCount);
 		
 		addScore(0);
