@@ -137,7 +137,7 @@ public class QuestionFrontend{
 		Label currentExplanation = new Label(this.currentQuestion.getExplanation());
 		currentExplanation.setWrapText(true);
 		layoutManager.add(currentExplanation, 0, 100);
-		currentExplanation.setMaxWidth(Double.MAX_VALUE);
+		currentExplanation.setMaxWidth(1200);
 		currentExplanation.setAlignment(Pos.CENTER);
 		
 		primaryStage.hide();
