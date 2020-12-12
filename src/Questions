@@ -491,7 +491,6 @@ Manage the command a user can use on each host
 ..............................................................................................................................
 Explanation: sudo does not provide a root password to the user to reduces the possibilities of mistakes
 ..............................................................................................................................
-
 Linux & Mocha-200
 MultipleChoice
 Which of the following about the passphrase is false?
