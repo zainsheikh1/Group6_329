@@ -861,10 +861,10 @@ MultipleChoice
 Which of the following is true about 2019 NIST password guidelines
 At least 10 attempts before lockout
 Supports at least 32 characters
-b). Allow  password hints  and  secret questions 
-c). Do not allow passwords to be copy-pasted into password fields
+Allow  password hints  and  secret questions 
+Do not allow passwords to be copy-pasted into password fields
 ..............................................................................................................................
-Explanation: NIST SSupports at least 64 characters; no  password hints  and  secret questions ; allow passwords to be copy-pasted into password fields
+Explanation: NIST Supports at least 64 characters; no  password hints  and  secret questions ; allow passwords to be copy-pasted into password fields
 ..............................................................................................................................
 History and Rules-200
 MultipleChoice
