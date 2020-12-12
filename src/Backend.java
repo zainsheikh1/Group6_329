@@ -24,7 +24,7 @@ public class Backend {
 	 * Description: Creates the hashmap for all questions, using the Question categories as keys
 	 */
 		public static void createQuestionsMap() throws FileNotFoundException {
-		File file = new File("src/Questions.");
+		File file = new File("src/Questions");
 		Scanner scan = new Scanner(file);
 		
 		
