@@ -19,13 +19,15 @@ import javafx.stage.Stage;
 
 public class MiniGameScreen{
 	
-	
+	Backend b = new Backend();
+	int correct = 0;
 
 	
 	private BorderPane layoutManager;
 
 	
 	private Label cypherOut = new Label("");
+	private Label answerOut = new Label("");
 
 
 
@@ -42,16 +44,30 @@ public class MiniGameScreen{
 		GridPane topPane = new GridPane();
 		
 		Label welcomeMessage = new Label("Welcome to the cyphertext hacker game!");
-		Label generalInstruct = new Label("<General Instructions>");
-		Label level1Instruct = new Label("<Level 1 Instructions>");
-		Label level2Instruct = new Label("<Level 2 Instructions>");
-		Label level3Instruct = new Label("<Label 3 Instructions>");
+		Label generalInstruct = new Label("Enter a 4-digit plaintext in each of the plaintext fields.");
+		Label l1 = new Label("Our best security experts will encrypt ONE of the plaintexts at random.");
+		Label l2 = new Label("The cypher text will be produced such that a randomly generated key will be bit-added to the chosen plaintext.");
+		Label l3 = new Label("The key will be a 4-digit number such that the first and third digits are the same and the second and fourth digits are the same.");
+		Label l4 = new Label("The first digit of the key will be added to the first digit of the plaintext, the second digits will be added together and so on.");
+		Label l5 = new Label("The addition will not be carried and so the digits will loop from 9, back to 0 (5+6 = 0 /=/ 11).");
+		Label l6 = new Label("You will play the role of the attacker. ");
+		Label l62 = new Label("With these hints, and the produced cyphertext, you must decide which plaintext was chosen for encryption.");
+		Label l7 = new Label("Coming up with a perfect solution for figuring out which plaintext was encrypted every time"); 
+		Label l72 = new Label ("will grant you the rank of MASTER HACKER!");
+		Label l8 = new Label("Good Luck!");
 		
 		topPane.add(welcomeMessage, 0,0);
 		topPane.add(generalInstruct,0,1);
-		topPane.add(level1Instruct,0,2);
-		topPane.add(level2Instruct,0,3);
-		topPane.add(level3Instruct,0,4);
+		topPane.add(l1,0,2);
+		topPane.add(l2,0,3);
+		topPane.add(l3,0,4);
+		topPane.add(l4,0,5);
+		topPane.add(l5,0,6);
+		topPane.add(l6,0,7);
+		topPane.add(l62, 0, 8);
+		topPane.add(l7,0,9);
+		topPane.add(l72,0,10);
+		topPane.add(l8,0,11);
 		
 		
 		
@@ -62,6 +78,7 @@ public class MiniGameScreen{
 		
 		Label leftLabel = new Label("Plaintext 1");
 		TextField leftField = new TextField();
+		
 		leftPane.add(leftLabel,0,0);
 		leftPane.add(leftField,0,1);
 		
@@ -72,7 +89,7 @@ public class MiniGameScreen{
 		
 		GridPane rightPane = new GridPane();
 		
-		Label rightLabel = new Label("Plaintext 1");
+		Label rightLabel = new Label("Plaintext 2");
 		TextField rightField = new TextField();
 		rightPane.add(rightLabel,0,0);
 		rightPane.add(rightField,0,1);
@@ -90,24 +107,42 @@ public class MiniGameScreen{
 		convertButton.setTextFill(Color.YELLOW);
 		convertButton.setPrefWidth(1000000);
 		convertButton.setOnAction(new EventHandler() {
-
+			
 			@Override
 			public void handle(Event arg0) {
 				convertButtonAction();
+				String pt1 = leftField.getText();
+				String pt2 = rightField.getText();
+				
+				int rand = b.random(1,2);
+				String selectedPT = "";
+				if(rand==1) {
+					selectedPT = pt1;
+					correct = 1;
+				}else {
+					selectedPT = pt2;
+					correct  = 2;
+				}
+				
+				String cypherText = b.getCypherText(selectedPT);
+				displayCypherText(cypherText);
+				
+				System.out.println(cypherText);
 				
 			}
 			
 		});
 		
 		
-		displayCypherText("");
+		displayCypherText("hello");
 		Label questionLabel = new Label("Which plain-text was used to make the cypher text?");
 		
 		
 		this.layoutManager.setCenter(centerPane);
 		centerPane.add(convertButton, 1, 0);
 		centerPane.add(cypherOut,1,1);
-		centerPane.add(questionLabel,1,2);
+		centerPane.add(answerOut, 1, 2);
+		centerPane.add(questionLabel,1,3);
 		
 		centerPane.setAlignment(Pos.CENTER);
 		cypherOut.setAlignment(Pos.CENTER);
@@ -117,7 +152,7 @@ public class MiniGameScreen{
 		
 		GridPane bottomPane = new GridPane();
 		
-		Button oneButton = new Button("Plaintext 2");
+		Button oneButton = new Button("Plaintext 1");
 		oneButton.setStyle(JeopardyFrontend.buttonBackground);
 		oneButton.setTextFill(Color.YELLOW);
 		oneButton.setOnAction(new EventHandler() {
@@ -125,7 +160,13 @@ public class MiniGameScreen{
 			@Override
 			public void handle(Event event) {
 				oneButtonAction();
-				
+				if(correct==1) {
+					System.out.println("Correct");
+					displayAnswer("Correct");
+				}else {
+					System.out.println("Wrong");
+					displayAnswer("Incorrect");
+				}
 			}
 			
 		});
@@ -139,7 +180,13 @@ public class MiniGameScreen{
 			@Override
 			public void handle(Event event) {
 				twoButtonAction();
-				
+				if(correct==2) {
+					System.out.println("Correct");
+					displayAnswer("Correct");
+				}else {
+					System.out.println("Wrong");
+					displayAnswer("Incorrect");
+				}
 			}
 			
 		});
@@ -190,17 +237,13 @@ public class MiniGameScreen{
 	public void displayCypherText(String valueToDisplay) {
 		cypherOut.setText("Produced Cypher Text = "+valueToDisplay);
 	}
-		
-		
-		
-		
+	
+	public void displayAnswer(String valueToDisplay) {
+		answerOut.setText("You are "+valueToDisplay);
+	}
 		
 		
 
-	
-	
-	
-	
 	
 	
 }
