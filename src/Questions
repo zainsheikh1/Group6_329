@@ -779,7 +779,7 @@ Integrity
 Availability
 Confidentiality
 ..............................................................................................................................
-No explanation
+Explanation: elements of the security triad are Integrity, Availability and Confidentiality/
 ..............................................................................................................................
 History and Rules-100
 MultipleChoice
@@ -789,7 +789,7 @@ Adleman
 Shamir
 Rivest
 ..............................................................................................................................
-Answer: How dare you not know the three recipients of  Association for Computing Machinery's 2002 Turing Award  for their seminal contributions to the theory and practical application of public-key cryptography.
+Explanation: How dare you not know the three recipients of  Association for Computing Machinery's 2002 Turing Award  for their seminal contributions to the theory and practical application of public-key cryptography.
 ..............................................................................................................................
 History and Rules-100
 MultipleChoice
@@ -797,7 +797,7 @@ Using a Tor browser, your personal IP address will not be known resulting in you
 True 
 False 
 ..............................................................................................................................
-No explanation
+Explanation: True
 ..............................................................................................................................
 History and Rules-200
 MultipleChoice
@@ -828,7 +828,7 @@ Equifax
 eBay
 Canva
 ..............................................................................................................................
-Explanation: Refer to the following reference: Reference: https://www.csoonline.com/article/2130877/the-biggest-data-breaches-of-the-21st-century.html
+Explanation: refer to the following reference: Reference: https://www.csoonline.com/article/2130877/the-biggest-data-breaches-of-the-21st-century.html
 ..............................................................................................................................
 History and Rules-200
 MultipleChoice
@@ -836,7 +836,7 @@ A secure system is one you can rely on to allow authorized modifications to reso
 False
 True
 ..............................................................................................................................
-Explanation: A secure system is one you can rely on to keep your personal data confidential. 
+Explanation: a secure system is one you can rely on to keep your personal data confidential. 
 ..............................................................................................................................
 History and Rules-200
 MultipleChoice
@@ -846,7 +846,7 @@ Blastland
 Harrison
 Satlzer
 ..............................................................................................................................
-No explanation
+Explanation: Kerkchoff
 ..............................................................................................................................
 History and Rules-200
 MultipleChoice
@@ -861,10 +861,10 @@ MultipleChoice
 Which of the following is true about 2019 NIST password guidelines
 At least 10 attempts before lockout
 Supports at least 32 characters
-Allow  password hints  and  secret questions 
-Do not allow passwords to be copy-pasted into password fields
+b). Allow  password hints  and  secret questions 
+c). Do not allow passwords to be copy-pasted into password fields
 ..............................................................................................................................
-Explanation: NIST Supports at least 64 characters; no  password hints  and  secret questions ; allow passwords to be copy-pasted into password fields
+Explanation: NIST supports at least 64 characters; no  password hints  and  secret questions ; allow passwords to be copy-pasted into password fields
 ..............................................................................................................................
 History and Rules-200
 MultipleChoice
@@ -874,7 +874,7 @@ the list of all ads seen, ads on your browser
 all invisible trackers on it, invisible trackers
 bits of identifying information, information on the websites you visit (their number of visits, their most visited pages, etc.)
 ..............................................................................................................................
-No explanation
+Explanation: bits of identifying information, information on you (your OS, screen resolution, language set, etc.)
 ..............................................................................................................................
 History and Rules-300
 MultipleChoice
@@ -884,7 +884,7 @@ Base access decision on permission rather than exclusion
 Security design should not depend on the ignorance of potential attacker
 Every program and user should operate while invoking as few privileges as possible.
 ..............................................................................................................................
-No explanation
+Explanation: when a protection mechanism require two keys, it allows for two-person control to prevent unilateral action by attackers. 
 ..............................................................................................................................
 History and Rules-300
 MultipleChoice
@@ -894,7 +894,7 @@ is not unique and you cannot be tracked as you navigate different websites withi
 is unique and you cannot be tracked as you navigate different websites within that web browser
 is not unique and you can be tracked as you navigate different websites within that web browser
 ..............................................................................................................................
-No explanation
+Explanation: a unique fingerprint online means that your web browser is unique and you can be tracked as you navigate different websites within that web browser.
 ..............................................................................................................................
 History and Rules-300
 MultipleChoice
@@ -904,7 +904,7 @@ authorizations
 identification
 verification
 ..............................................................................................................................
-No explanation
+Explanation: authentication is a process of proving the claimed identity of the agent.
 ..............................................................................................................................
 History and Rules-300
 MultipleChoice
@@ -914,7 +914,7 @@ NoScript Security Suite
 Lightbeam 3.0
 Adblock Plus
 ..............................................................................................................................
-No explanation
+Explanation: Privacy Badger
 ..............................................................................................................................
 History and Rules-400
 MultipleChoice
@@ -935,7 +935,7 @@ Automatically clears any cookies and browsing history when you are done browsing
 Makes it difficult for the user to be fingerprinted 
 Prevents someone watching your connection from knowing what websites you visit
 ..............................................................................................................................
-No explanation
+Explanation: all of the options are correct.
 ..............................................................................................................................
 History and Rules-400
 MultipleChoice
@@ -946,7 +946,7 @@ Confinement ensures that misbehaving users and applications cannot harm the rest
 None of the options
 All of the options (1, 2, 3, 4)
 ..............................................................................................................................
-No explanation
+Explanation: 1), 2), 4)
 ..............................................................................................................................
 History and Rules-500
 MultipleChoice
@@ -956,7 +956,7 @@ He signs your key by taking you private key and encrypt it with his private key
 He signs your key by taking you public key and encrypt it with his public key
 We do not need Bob because you can email your public key to me, and email is more secure than WhatsApp
 ..............................................................................................................................
-No explanation
+Explanation: he signs your key by taking your public key and encrypt it with his private key
 ..............................................................................................................................
 History and Rules-500
 MultipleChoice
@@ -967,5 +967,6 @@ How do websites know your IP address and location (on most browsers)? When you v
 None of the options
 All of the options (1, 2, 3)
 ..............................................................................................................................
-No explanation
+Explanation: IP addresses between the server hosting the website and your IP address must be exchanged to exchange data. Your IP address is known in your fingerprint and this IP address is given to the server hosting the website
 ..............................................................................................................................
+
