@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
+import javafx.geometry.HPos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -53,9 +54,13 @@ public class MiniGameScreen{
 		Label l5 = new Label("The addition will not be carried and so the digits will loop from 9, back to 0 (5+6 = 0 /=/ 11).");
 		Label l6 = new Label("You will play the role of the attacker. ");
 		Label l62 = new Label("With these hints, and the produced cyphertext, you must decide which plaintext was chosen for encryption.");
-		Label l7 = new Label("Coming up with a perfect solution for figuring out which plaintext was encrypted every time"); 
-		Label l72 = new Label ("will grant you the rank of MASTER HACKER!");
+		Label l7 = new Label("Coming up with a perfect solution for figuring out which plaintext was encrypted every time will grant you the rank of MASTER HACKER!"); 
 		Label l8 = new Label("Good Luck!");
+		Label l9 = new Label("");
+		
+		l7.setWrapText(true);
+		l8.setFont(Font.font("Verdana",15));
+		welcomeMessage.setFont(Font.font("Verdana",20));
 		
 		topPane.add(welcomeMessage, 0,0);
 		topPane.add(generalInstruct,0,1);
@@ -67,13 +72,14 @@ public class MiniGameScreen{
 		topPane.add(l6,0,7);
 		topPane.add(l62, 0, 8);
 		topPane.add(l7,0,9);
-		topPane.add(l72,0,10);
-		topPane.add(l8,0,11);
+		topPane.add(l8,0,10);
+		topPane.add(l9, 0, 11);
 		
 		
 		cypherOut.setFont(Font.font("Verdana",20));
 		
-		
+		topPane.setHalignment(welcomeMessage, HPos.CENTER);
+		topPane.setHalignment(l8, HPos.CENTER);
 		
 		this.layoutManager.setTop(topPane);
 		
