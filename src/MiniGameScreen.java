@@ -15,6 +15,8 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.TextAlignment;
+import javafx.scene.text.TextFlow;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 
@@ -47,18 +49,34 @@ public class MiniGameScreen{
 		
 		Label welcomeMessage = new Label("Welcome to the cyphertext hacker game!");
 		Label generalInstruct = new Label("Enter a 4-digit plaintext in each of the plaintext fields.");
-		Label l1 = new Label("Our best security experts will encrypt ONE of the plaintexts at random.");
+		TextFlow l1 = new TextFlow();
+		Text l1a = new Text("Our best security experts will encrypt ");
+		Text l1b = new Text("ONE");
+		Text l1c = new Text(" of the plaintexts at random.");
+		l1b.setStyle("-fx-font-weight: bold");
+		l1.getChildren().addAll(l1a, l1b, l1c);
+		//Label l1 = new Label("Our best security experts will encrypt ONE of the plaintexts at random.");
 		Label l2 = new Label("The cypher text will be produced such that a randomly generated key will be bit-added to the chosen plaintext.");
 		Label l3 = new Label("The key will be a 4-digit number such that the first and third digits are the same and the second and fourth digits are the same.");
 		Label l4 = new Label("The first digit of the key will be added to the first digit of the plaintext, the second digits will be added together and so on.");
 		Label l5 = new Label("The addition will not be carried and so the digits will loop from 9, back to 0 (5+6 = 0 /=/ 11).");
-		Label l6 = new Label("You will play the role of the attacker. ");
+		TextFlow l6 = new TextFlow();
+		Text l6a = new Text("You will play the role of the ");
+		Text l6b = new Text("attacker.");
+		l6b.setStyle("-fx-font-weight: bold");
+		l6.getChildren().addAll(l6a, l6b);
+		//Label l6 = new Label("You will play the role of the ");
 		Label l62 = new Label("With these hints, and the produced cyphertext, you must decide which plaintext was chosen for encryption.");
-		Label l7 = new Label("Coming up with a perfect solution for figuring out which plaintext was encrypted every time will grant you the rank of MASTER HACKER!"); 
+		TextFlow l7 = new TextFlow();
+		Text l7a = new Text("Coming up with a perfect solution for figuring out which plaintext was encrypted every time will grant you the rank of ");
+		Text l7b = new Text("MASTER HACKER!");
+		l7b.setStyle("-fx-font-weight: bold");
+		l7.getChildren().addAll(l7a, l7b);
+		//Label l7 = new Label("Coming up with a perfect solution for figuring out which plaintext was encrypted every time will grant you the rank of MASTER HACKER!"); 
 		Label l8 = new Label("Good Luck!");
 		Label l9 = new Label("");
 		
-		l7.setWrapText(true);
+		//l7.setWrapText(true);
 		l8.setFont(Font.font("Verdana",15));
 		welcomeMessage.setFont(Font.font("Verdana",20));
 		
