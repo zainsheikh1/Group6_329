@@ -16,7 +16,7 @@ lsb2(x)=1001, msb4(x)=00
 lsb2(x)=001, msb4(x)=100
 lsb2(x)=011, msb4(x)=101
 ..............................................................................................................................
-MSB is the highest digit, but and the LSB is the lowest digit bit. In the binary data, the left end is the highest digit, while the right end is the lowest digit. 
+Explanation: msb is the highest digit, but and the lsb is the lowest digit bit. In the binary data, the left end is the highest digit, while the right end is the lowest digit. 
 ..............................................................................................................................
 I heard you're good at math-200
 MultipleChoice
@@ -46,7 +46,7 @@ Determines length of binary representation
 Means leftmost bit in a fixed-width representation
 Leftmost 1 bit
 ..............................................................................................................................
-The lsb also determines whether the number is even or odd.
+Explanation: the lsb also determines whether the number is even or odd.
 ..............................................................................................................................
 I heard you're good at math-300
 MultipleChoice
@@ -154,7 +154,7 @@ Since plenty of collisions exist in cryptographic hash functions, then they are 
 False
 True 
 ..............................................................................................................................
-Cryptographic hash algorithms are long enough for random matches to be improbale, safe enough that it would be tough to find collisions and fast enough that they can be used anywhere.
+Explanation: cryptographic hash algorithms are long enough for random matches to be improbale, safe enough that it would be tough to find collisions and fast enough that they can be used anywhere.
 ..............................................................................................................................
 Cybercriminal Methods-100
 MultipleChoice
@@ -254,7 +254,7 @@ An encryption scheme has three algorithms which include: 1) Gen creates (generat
 2), 3)
 All of the options (1, 2, 3, 4)
 ..............................................................................................................................
-Explanation: Gen, Enc and Dec are the only three algorithms of an encryption scheme. They occur in the order, first Gen, then Enc, and lastly Dec.
+Explanation: Gen, Enc and Dec are three algorithms of an encryption scheme.
 ..............................................................................................................................
 Cybercriminal Methods-300
 MultipleChoice
@@ -317,7 +317,7 @@ Of the following options, select the notable malware events in history: 1) STUXn
 None of the options
 All of the options
 ..............................................................................................................................
-Explanation: creeper, reaper, wabbit, animal & prevade, elk cloner, code red, SQL Slammer, Sasser, STUXnet are all notable malware events
+Explanation: creeper, reaper, wabbit, animal & prevade, elk cloner, code red, SQL Slammer, Sasser, STUXnet
 ..............................................................................................................................
 Cybercriminal Methods-400
 MultipleChoice
@@ -500,7 +500,7 @@ Passphrase is used to encrypt the private key
 No part of the passphrase should be derivable from personal information about the user and his/her family
 Passphrase is usually longer than a password
 ..............................................................................................................................
-Explanation: Password is used to authenticate or log into a system, and refers to a secret used to protect an encryption key.
+Explanation: password is used to authenticate or log into a system, and refers to a secret used to protect an encryption key.
 ..............................................................................................................................
 Linux & Mocha-200
 MultipleChoice
@@ -644,7 +644,7 @@ Black holes are extraterrestrials’ failed attempts at finding two messages and
 False
 True
 ..............................................................................................................................
-Explanation: A big computer would be necessary to try and find two messages and random inputs that produce the same commitment, theoretically it would work. But there exists no big enough computer (nor can you build one with today's technology) to do that.
+Explanation: a big computer would be necessary to try and find two messages and random inputs that produce the same commitment, theoretically it would work. But there exists no big enough computer (nor can you build one with today's technology) to do that.
 ..............................................................................................................................
 Blockchain-100
 MultipleChoice
@@ -654,7 +654,7 @@ Experimentation and development
 All writers are known and fully trusted
 When not all writers are known
 ..............................................................................................................................
-Explanation: These networks require access to be a part of (all writers are known) but you must not know writers in the real world (not fully trusted).
+Explanation: these networks require access to be a part of (all writers are known) but you must not know writers in the real world (not fully trusted).
 ..............................................................................................................................
 Blockchain-100
 MultipleChoice
@@ -674,7 +674,7 @@ A digital signature scheme has 3 algorithms. Select the 3 out of these 4: 1) Gen
 2), 3), 4)
 1), 3), 4)
 ..............................................................................................................................
-Explanation: While the signature does sign messages, this isn’t a separate algorithm Plac
+Explanation: while the signature does sign messages, this isn’t a separate algorithm Plac
 ..............................................................................................................................
 Blockchain-200
 MultipleChoice
@@ -684,7 +684,7 @@ The data itself and 1 hashed value (in the simplest case)
 Not the data itself, just the 2 hashed values (in the simplest case)
 Not the data itself and 1 hashed value (in the simplest case)
 ..............................................................................................................................
-Explanation: The 2 hashed values are the hash of the other leaf and the commitment 
+Explanation: the 2 hashed values are the hash of the other leaf and the commitment 
 ..............................................................................................................................
 Blockchain-200
 MultipleChoice
@@ -695,7 +695,7 @@ Sk lets you  speak for  on vk
 Generate as many identities as you want 
 If sk is leaked to may, or everyone shares the same vk, than everyone acts as the same person and is therefore anonymous
 ..............................................................................................................................
-Explanation: The 2 hashed values are the hash of the other leaf and the commitment 
+Explanation: the 2 hashed values are the hash of the other leaf and the commitment 
 ..............................................................................................................................
 Blockchain-300
 MultipleChoice
@@ -705,7 +705,7 @@ Non-randomized, decode, long, reversible, non-random
 Non-randomized, encodes, short, irreversible, non-random
 Randomized, decode, long, reversible, random
 ..............................................................................................................................
-Explanation: A commitment scheme is a cryptographic primitive that allows one to commit to a chosen value (or statement) while keeping it hidden to others, with the ability to reveal the committed value later
+Explanation: review lecture notes
 ..............................................................................................................................
 Blockchain-300
 MultipleChoice
@@ -716,7 +716,7 @@ Observability
 Verifiability
 Enforceability
 ..............................................................................................................................
-Explanation: Disintermediation means the reduction in the use of intermediaries between producers and consumers. This is not necessary for a contract design.
+Explanation: disintermediation means the reduction in the use of intermediaries between producers and consumers. This is not necessary for a contract design.
 ..............................................................................................................................
 Blockchain-300
 MultipleChoice
@@ -738,7 +738,7 @@ Have a logic programmed into it
 Removes the need for an intermediaries
 Only two of the options are correct
 ..............................................................................................................................
-Explanation: Review lecture notes. Smart contracts and vending machines have more similarties than you'd think!
+Explanation: review lecture notes. Smart contracts and vending machines have more similarties than you'd think!
 ..............................................................................................................................
 Blockchain-400
 MultipleChoice
@@ -758,7 +758,7 @@ Uses far more energy per transaction than all the world's banks put together
 Bitcoin addresses should only be used once
 Does not have economically responsive fiscal policy
 ..............................................................................................................................
-Explanation: Bitcoin transactions are irreversible, provide no dispute resolution or legal recourse and do not guarantee fraud protection.
+Explanation: bitcoin transactions are irreversible, provide no dispute resolution or legal recourse and do not guarantee fraud protection.
 ..............................................................................................................................
 Blockchain-500
 MultipleChoice
@@ -769,7 +769,7 @@ SHA256 is: 1) SHA stands for Secure Hash Algorithm and 256 is the length of the 
 All of the options (1, 2, 3)
 None of the options
 ..............................................................................................................................
-Explanation: No collisions are soon to be found so far in SHA (up to currently - year 2020), therefore it is very good and standardized by NIST. 
+Explanation: no collisions are soon to be found so far in SHA (up to currently - year 2020), therefore it is very good and standardized by NIST. 
 ..............................................................................................................................
 History and Rules-100
 MultipleChoice
@@ -789,7 +789,7 @@ Adleman
 Shamir
 Rivest
 ..............................................................................................................................
-Explanation: How dare you not know the three recipients of  Association for Computing Machinery's 2002 Turing Award  for their seminal contributions to the theory and practical application of public-key cryptography.
+Explanation: how dare you not know the three recipients of  Association for Computing Machinery's 2002 Turing Award  for their seminal contributions to the theory and practical application of public-key cryptography.
 ..............................................................................................................................
 History and Rules-100
 MultipleChoice
@@ -797,7 +797,7 @@ Using a Tor browser, your personal IP address will not be known resulting in you
 True 
 False 
 ..............................................................................................................................
-Explanation: True
+Explanation: true
 ..............................................................................................................................
 History and Rules-200
 MultipleChoice
@@ -854,7 +854,7 @@ According to the Principle of Easiest Penetration, computer security is a game w
 False
 True
 ..............................................................................................................................
-Explanation: A: The attacker can and will use any means of penetration.
+Explanation: A: the attacker can and will use any means of penetration.
 ..............................................................................................................................
 History and Rules-200
 MultipleChoice
@@ -924,7 +924,7 @@ Diminishes people’s rights
 Allows government to leak information about a person even if the person did not engage in wrongdoing
 Mass Surveillance can disproportionately affect certain groups of society
 ..............................................................................................................................
-Explanation: Read the paper at https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=1159&context=faculty_publications 
+Explanation: read the paper at https://scholarship.law.gwu.edu/cgi/viewcontent.cgi?article=1159&context=faculty_publications 
 ..............................................................................................................................
 History and Rules-400
 MultipleChoice
