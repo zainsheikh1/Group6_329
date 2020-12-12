@@ -12,6 +12,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
@@ -68,6 +69,9 @@ public class MiniGameScreen{
 		topPane.add(l7,0,9);
 		topPane.add(l72,0,10);
 		topPane.add(l8,0,11);
+		
+		
+		cypherOut.setFont(Font.font("Verdana",20));
 		
 		
 		
@@ -134,15 +138,13 @@ public class MiniGameScreen{
 		});
 		
 		
-		displayCypherText("hello");
-		Label questionLabel = new Label("Which plain-text was used to make the cypher text?");
+		displayCypherText("");
 		
 		
 		this.layoutManager.setCenter(centerPane);
 		centerPane.add(convertButton, 1, 0);
 		centerPane.add(cypherOut,1,1);
 		centerPane.add(answerOut, 1, 2);
-		centerPane.add(questionLabel,1,3);
 		
 		centerPane.setAlignment(Pos.CENTER);
 		cypherOut.setAlignment(Pos.CENTER);
