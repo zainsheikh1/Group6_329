@@ -114,6 +114,7 @@ public class MiniGameScreen{
 			
 			@Override
 			public void handle(Event arg0) {
+				answerOut.setText("");//resets text to of "Your are correct/incorrect" to blank everytime button is clicked
 				convertButtonAction();
 				String pt1 = leftField.getText();
 				String pt2 = rightField.getText();
