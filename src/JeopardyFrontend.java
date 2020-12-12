@@ -104,6 +104,19 @@ public class JeopardyFrontend extends Application{
 			}
 		}
 
+		//create back button 
+ 		Button backButton = new Button("Back");
+ 		backButton.setPrefSize(50, 20);
+ 		backButton.setTranslateX(270);
+ 		backButton.setTranslateY(10);
+ 		backButton.setStyle("-fx-font: 10 tahoma; -fx-base: #00ff00;");
+		
+ 		backButton.setOnAction ((event) -> { //changes scene
+			window.setScene(new Scene(setStart()));
+		});
+ 		
+ 		root.add(backButton, 0, 0);
+		
 		return root;
 	}
 	
