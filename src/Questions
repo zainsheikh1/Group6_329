@@ -644,7 +644,7 @@ Black holes are extraterrestrials’ failed attempts at finding two messages and
 False
 True
 ..............................................................................................................................
-Explanation: 
+Explanation: A big computer would be necessary to try and find two messages and random inputs that produce the same commitment, theoretically it would work. But there exists no big enough computer (nor can you build one with today's technology) to do that.
 ..............................................................................................................................
 Blockchain-100
 MultipleChoice
@@ -654,7 +654,7 @@ Experimentation and development
 All writers are known and fully trusted
 When not all writers are known
 ..............................................................................................................................
-No explanation
+Explanation: These networks require access to be a part of (all writers are known) but you must not know writers in the real world (not fully trusted).
 ..............................................................................................................................
 Blockchain-100
 MultipleChoice
@@ -664,7 +664,7 @@ log(n), 128
 n^2, 256
 n^3, 512 
 ..............................................................................................................................
-No explanation
+Explanation: review lecture notes.
 ..............................................................................................................................
 Blockchain-200
 MultipleChoice
@@ -705,7 +705,7 @@ Non-randomized, decode, long, reversible, non-random
 Non-randomized, encodes, short, irreversible, non-random
 Randomized, decode, long, reversible, random
 ..............................................................................................................................
-No explanation
+Explanation: review lecture notes
 ..............................................................................................................................
 Blockchain-300
 MultipleChoice
@@ -716,7 +716,7 @@ Observability
 Verifiability
 Enforceability
 ..............................................................................................................................
-No explanation
+Explanation: Disintermediation means the reduction in the use of intermediaries between producers and consumers. This is not necessary for a contract design.
 ..............................................................................................................................
 Blockchain-300
 MultipleChoice
@@ -738,7 +738,7 @@ Have a logic programmed into it
 Removes the need for an intermediaries
 Only two of the options are correct
 ..............................................................................................................................
-No explanation
+Explanation: Review lecture notes. Smart contracts and vending machines have more similarties than you'd think!
 ..............................................................................................................................
 Blockchain-400
 MultipleChoice
@@ -769,7 +769,7 @@ SHA256 is: 1) SHA stands for Secure Hash Algorithm and 256 is the length of the 
 All of the options (1, 2, 3)
 None of the options
 ..............................................................................................................................
-No explanation
+Explanation: No collisions are soon to be found so far in SHA (up to currently - year 2020), therefore it is very good and standardized by NIST. 
 ..............................................................................................................................
 History and Rules-100
 MultipleChoice
