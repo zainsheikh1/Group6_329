@@ -705,7 +705,7 @@ Non-randomized, decode, long, reversible, non-random
 Non-randomized, encodes, short, irreversible, non-random
 Randomized, decode, long, reversible, random
 ..............................................................................................................................
-Explanation: review lecture notes
+Explanation: A commitment scheme is a cryptographic primitive that allows one to commit to a chosen value (or statement) while keeping it hidden to others, with the ability to reveal the committed value later
 ..............................................................................................................................
 Blockchain-300
 MultipleChoice
